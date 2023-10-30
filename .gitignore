@@ -90,3 +90,5 @@ _build/
 
 # python-dotenv
 .env
+
+/data
