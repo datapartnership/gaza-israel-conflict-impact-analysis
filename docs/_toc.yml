@@ -11,6 +11,7 @@ parts:
   - caption: Data Products
     chapters:
       - file: notebooks/nighttime-lights/nighttime-lights.ipynb
+      - file: notebooks/conflict/acled.ipynb
   - caption: Acknowledgements
     chapters:
       - file: docs/team
