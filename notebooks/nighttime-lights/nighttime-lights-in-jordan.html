@@ -636,17 +636,17 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># df = bm_extract(</span>
-<span class="c1">#     roi_sf=ROI,</span>
-<span class="c1">#     product_id=&quot;VNP46A2&quot;,</span>
-<span class="c1">#     date=dates,</span>
-<span class="c1">#     bearer=os.environ.get(&quot;BLACKMARBLE_TOKEN&quot;),</span>
-<span class="c1">#     output_location_type=&quot;file&quot;,</span>
-<span class="c1">#     file_dir=&quot;data&quot;,</span>
-<span class="c1">#     file_prefix=&quot;jor_&quot;,</span>
-<span class="c1">#     aggregation_fun=[&quot;count&quot;, &quot;mean&quot;, &quot;min&quot;, &quot;max&quot;, &quot;median&quot;, &quot;sum&quot;],</span>
-<span class="c1">#     quiet=True,</span>
-<span class="c1"># )</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">bm_extract</span><span class="p">(</span>
+    <span class="n">roi_sf</span><span class="o">=</span><span class="n">ROI</span><span class="p">,</span>
+    <span class="n">product_id</span><span class="o">=</span><span class="s2">&quot;VNP46A2&quot;</span><span class="p">,</span>
+    <span class="n">date</span><span class="o">=</span><span class="n">dates</span><span class="p">,</span>
+    <span class="n">bearer</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;BLACKMARBLE_TOKEN&quot;</span><span class="p">),</span>
+    <span class="n">output_location_type</span><span class="o">=</span><span class="s2">&quot;file&quot;</span><span class="p">,</span>
+    <span class="n">file_dir</span><span class="o">=</span><span class="s2">&quot;data&quot;</span><span class="p">,</span>
+    <span class="n">file_prefix</span><span class="o">=</span><span class="s2">&quot;jor_&quot;</span><span class="p">,</span>
+    <span class="n">aggregation_fun</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;count&quot;</span><span class="p">,</span> <span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;min&quot;</span><span class="p">,</span> <span class="s2">&quot;max&quot;</span><span class="p">,</span> <span class="s2">&quot;median&quot;</span><span class="p">,</span> <span class="s2">&quot;sum&quot;</span><span class="p">],</span>
+    <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -959,7 +959,7 @@ document.write(`
 <p>The latest update date is:</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;08 November 2023)&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;08 November 2023&#39;
 </pre></div>
 </div>
 </div>
