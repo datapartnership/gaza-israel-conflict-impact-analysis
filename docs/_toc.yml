@@ -11,9 +11,9 @@ parts:
   - caption: Data Products
     chapters:
       - file: notebooks/nighttime-lights/nighttime-lights.ipynb
-      - file: notebooks/conflict/acled.ipynb
       - file: notebooks/damage-assessment/README
         sections:
+          - file: notebooks/conflict/acled.ipynb
           - file: notebooks/damage-assessment/damage-assessment.ipynb
   - caption: Acknowledgements
     chapters:
