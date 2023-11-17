@@ -402,6 +402,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#damage-map">Damage Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-statistics">Summary Statistics</a></li>
 </ul>
             </nav>
         </div>
@@ -419,6 +420,16 @@ document.write(`
 <p class="admonition-title">Note</p>
 <p>The results shown in this analysis only reflect the damages until October 25th 2023. As the team completes further analysis, the notebook will be updated.</p>
 </div>
+<section id="damage-map">
+<h2>Damage Map<a class="headerlink" href="#damage-map" title="Permalink to this heading">#</a></h2>
+<p>You can now interact with this map by selecting/deselecting different damage layers to visualize where buildings are most impacted in the Gaza Strip. Upon visual inspection, you can see</p>
+<ol class="arabic simple">
+<li><p>Damages: You can select and deselect the layers to see damages to roads, buildings and points of interest. The damage value ranges between 0 and 1 with 1 indicating higher levels of damage</p></li>
+<li><p>Conflict: You can select this layer to view areas wit reported events and fatalities</p></li>
+</ol>
+<iframe width="100%" height="500px" src="https://studio.foursquare.com/public/26ba3dfb-0770-4cc6-b6fa-2ee2878580fc/embed" frameborder="0" allowfullscreen></iframe></section>
+<section id="summary-statistics">
+<h2>Summary Statistics<a class="headerlink" href="#summary-statistics" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -481,6 +492,90 @@ document.write(`
 <div class="cell_output docutils container">
 <img alt="../../_images/c2bd1204e371ad9ac775c8f73b32399be241d44e30a5420a2e77916ff274394d.png" src="../../_images/c2bd1204e371ad9ac775c8f73b32399be241d44e30a5420a2e77916ff274394d.png" />
 </div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Total</th>
+      <th>Residential</th>
+      <th>Industrial</th>
+      <th>Commercial</th>
+    </tr>
+    <tr>
+      <th>ADM2_EN</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>North</th>
+      <td>18.71</td>
+      <td>19.38</td>
+      <td>25.98</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Gaza</th>
+      <td>21.93</td>
+      <td>58.33</td>
+      <td>27.24</td>
+      <td>31.94</td>
+    </tr>
+    <tr>
+      <th>Deir Al-Balah</th>
+      <td>11.80</td>
+      <td>15.50</td>
+      <td>20.11</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Khan Younis</th>
+      <td>10.68</td>
+      <td>16.04</td>
+      <td>9.76</td>
+      <td>7.69</td>
+    </tr>
+    <tr>
+      <th>Rafah</th>
+      <td>11.83</td>
+      <td>21.77</td>
+      <td>7.69</td>
+      <td>4.96</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
@@ -552,6 +647,90 @@ document.write(`
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Total</th>
+      <th>Tracks</th>
+      <th>Primary Roads</th>
+      <th>Secondary Roads</th>
+    </tr>
+    <tr>
+      <th>ADM2_EN</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>North</th>
+      <td>22.26</td>
+      <td>2.48</td>
+      <td>58.45</td>
+      <td>40.91</td>
+    </tr>
+    <tr>
+      <th>Gaza</th>
+      <td>26.01</td>
+      <td>3.03</td>
+      <td>30.23</td>
+      <td>34.22</td>
+    </tr>
+    <tr>
+      <th>Deir Al-Balah</th>
+      <td>13.20</td>
+      <td>4.07</td>
+      <td>0.00</td>
+      <td>8.15</td>
+    </tr>
+    <tr>
+      <th>Khan Younis</th>
+      <td>11.25</td>
+      <td>2.86</td>
+      <td>0.00</td>
+      <td>15.83</td>
+    </tr>
+    <tr>
+      <th>Rafah</th>
+      <td>14.27</td>
+      <td>4.03</td>
+      <td>5.14</td>
+      <td>23.51</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;font.family&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Georgia&quot;</span>
@@ -603,10 +782,90 @@ document.write(`
 <img alt="../../_images/deb863871d45ae2a1dbf284719e7a84fb36bbb6141bbccf022ca7954afd64603.png" src="../../_images/deb863871d45ae2a1dbf284719e7a84fb36bbb6141bbccf022ca7954afd64603.png" />
 </div>
 </div>
-<section id="damage-map">
-<h2>Damage Map<a class="headerlink" href="#damage-map" title="Permalink to this heading">#</a></h2>
-<p>You can now interact with this map by selecting/deselecting different damage layers to visualize where buildings are most impacted in the Gaza Strip</p>
-<iframe width="100%" height="500px" src="https://studio.foursquare.com/public/26ba3dfb-0770-4cc6-b6fa-2ee2878580fc/embed" frameborder="0" allowfullscreen></iframe></section>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>building_category</th>
+      <th>ADM2_EN</th>
+      <th>Communications Infrastructure</th>
+      <th>Educational Institutions</th>
+      <th>Places of Economic Activity</th>
+      <th>Water Infrastructure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Deir Al-Balah</td>
+      <td>33.783784</td>
+      <td>48.214286</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Gaza</td>
+      <td>31.715771</td>
+      <td>41.358025</td>
+      <td>31.25</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Khan Younis</td>
+      <td>23.202614</td>
+      <td>36.082474</td>
+      <td>0.00</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>North</td>
+      <td>32.098765</td>
+      <td>38.461538</td>
+      <td>NaN</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Rafah</td>
+      <td>37.575758</td>
+      <td>60.784314</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -673,6 +932,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#damage-map">Damage Map</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-statistics">Summary Statistics</a></li>
 </ul>
   </nav></div>
 
