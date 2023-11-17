@@ -10,11 +10,14 @@ parts:
       - file: docs/foundational_datasets_and_data_products.md
   - caption: Data Products
     chapters:
-      - file: notebooks/nighttime-lights/nighttime-lights.ipynb
       - file: notebooks/damage-assessment/README
         sections:
           - file: notebooks/conflict/acled.ipynb
           - file: notebooks/damage-assessment/damage-assessment.ipynb
+      - file: notebooks/nighttime-lights/README
+        sections:
+          - file: notebooks/nighttime-lights/nighttime-lights.ipynb
+          - file: notebooks/nighttime-lights/nighttime-lights-in-jordan.ipynb
   - caption: Acknowledgements
     chapters:
       - file: docs/team
