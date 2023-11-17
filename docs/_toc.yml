@@ -12,6 +12,9 @@ parts:
     chapters:
       - file: notebooks/nighttime-lights/nighttime-lights.ipynb
       - file: notebooks/conflict/acled.ipynb
+      - file: notebooks/damage-assessment/README
+        sections:
+          - file: notebooks/damage-assessment/damage-assessment.ipynb
   - caption: Acknowledgements
     chapters:
       - file: docs/team
