@@ -26,7 +26,7 @@ The team has overlaid radar change detection data with underlying baseline data 
 ## Limitations
 
 ```{important}
-This analysis has not yet been verified using a different data source. The team is currently working on procuring high resolution imagery to verify whether the buildings identified as damaged have collapsed or experienced impact. 
+The following damage assessment maps are based on preliminary estimates and have not been verified through field survey or satellite imagery. They do not reflect the final estimations by the [World Bank](https://www.worldbank.org/en/country/westbankandgaza). The project team is currently working on procuring high resolution imagery to verify whether the buildings identified as damaged have collapsed or experienced impact. 
 ```
 
 ```{caution}
