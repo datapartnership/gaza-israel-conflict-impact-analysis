@@ -1366,65 +1366,6 @@ document.write(`
 <section id="roads">
 <h3>Roads<a class="headerlink" href="#roads" title="Permalink to this heading">#</a></h3>
 <p>In the following section, we calculate summary statistics on <strong>Roads</strong> for each second-level administrative division.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">left</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="n">ROADS</span><span class="p">[</span><span class="n">ROADS</span><span class="p">[</span><span class="s2">&quot;_upd5max&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mf">0.5</span><span class="p">]</span>
-    <span class="o">.</span><span class="n">value_counts</span><span class="p">([</span><span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">])</span>
-    <span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="s2">&quot;damaged&quot;</span><span class="p">)</span>
-<span class="p">)</span>
-<span class="n">right</span> <span class="o">=</span> <span class="n">ROADS</span><span class="o">.</span><span class="n">value_counts</span><span class="p">([</span><span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="s2">&quot;total&quot;</span><span class="p">)</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-<span class="n">df</span><span class="p">[</span><span class="s2">&quot;perc&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;damaged&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;total&quot;</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: Percentage of Damaged Roads&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.01</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s2">&quot;perc&quot;</span><span class="p">,</span> <span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
-    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;barh&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">ColorBlind_10</span><span class="o">.</span><span class="n">mpl_colors</span>
-<span class="p">)</span>
-
-<span class="c1"># Add labels and customization</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;% Damaged Roads&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">FuncFormatter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">y</span><span class="p">,</span> <span class="n">_</span><span class="p">:</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">%&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">y</span><span class="p">)))</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Adm 2&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;ADM2_EN&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">(),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s2">&quot;right&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s2">&quot;top&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-
-<span class="c1"># Only show ticks on the left and bottom spines</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_ticks_position</span><span class="p">(</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_ticks_position</span><span class="p">(</span><span class="s2">&quot;bottom&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s2">&quot;both&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.01</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">))</span>
-
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span>
-    <span class="s2">&quot;Estimated percentage of damaged roads for each second-level administrative division&quot;</span><span class="p">,</span>
-    <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
-<span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
-    <span class="mi">0</span><span class="p">,</span>
-    <span class="o">-</span><span class="mf">0.1</span><span class="p">,</span>
-    <span class="s2">&quot;Source: World Bank calculations derived from OpenStreetMap and Sentinel-1 data.&quot;</span><span class="p">,</span>
-    <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span>
-    <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
-    <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span>
-    <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span>
-    <span class="n">weight</span><span class="o">=</span><span class="s2">&quot;normal&quot;</span><span class="p">,</span>
-<span class="p">);</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../../_images/8a9cd3d7857e92a06ef21c491ed3045b155dd9b656d45ad3b4e06feef9f1b145.svg" src="../../_images/8a9cd3d7857e92a06ef21c491ed3045b155dd9b656d45ad3b4e06feef9f1b145.svg" /></div>
-</div>
 <figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="../../_images/logo.png"><img alt="../../_images/logo.png" src="../../_images/logo.png" style="height: 0px;" /></a>
 <figcaption>
@@ -1432,7 +1373,7 @@ document.write(`
 </figcaption>
 </figure>
 <p>Alternatively, please see below the tabular data.</p>
-<div class="cell tag_remove-input docutils container">
+<div class="cell tag_remove-input tag_output_scroll docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><style type="text/css">
 </style>
