@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -39,9 +39,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -63,15 +63,17 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/damage-assessment/README';</script>
     <link rel="canonical" href="https://worldbank.github.io/https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/notebooks/damage-assessment/README.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Baseline Points of Interest and Conflict in the Gaza Strip" href="../conflict/acled.html" />
-    <link rel="prev" title="Foundational Datasets and Data Products Summary" href="../../docs/foundational_datasets_and_data_products.html" />
+    <link rel="prev" title="Datasets and Data Products Summary" href="../../docs/data.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Dec 19, 2023"/>
+    <meta name="docbuild:last-update" content="Jan 17, 2024"/>
   </head>
   
   
@@ -79,7 +81,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
 
@@ -122,12 +124,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -167,15 +177,15 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../docs/introduction_to_data_goods.html">Introduction to Data Goods</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Foundational Datasets</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Datasets</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../docs/foundational_datasets_and_data_products.html">Foundational Datasets and Data Products Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../docs/data.html">Datasets and Data Products Summary</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Products</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Estimating Damage to Buildings and Infrastructure</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../conflict/acled.html">Baseline Points of Interest and Conflict in the Gaza Strip</a></li>
-<li class="toctree-l2"><a class="reference internal" href="damage-assessment.html">Visualizing Damage Estimation in Gaza</a></li>
+<li class="toctree-l2"><a class="reference internal" href="damage-assessment.html">Visualizing Damage Buldings and Infrastructure in Gaza</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../nighttime-lights/README.html">Nighttime Lights Trends</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -400,7 +410,12 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">Methodology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">Methodology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#image-similarity-computation">1. Image similarity computation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-detection-based-on-time-series-statistics">2. Change detection based on time series statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infrastructural-damage-assessment-using-the-change-maps-and-the-vector-layers">3. Infrastructural damage assessment using the change maps and the vector layers</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
@@ -412,7 +427,7 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="estimating-damage-to-buildings-and-infrastructure">
 <h1>Estimating Damage to Buildings and Infrastructure<a class="headerlink" href="#estimating-damage-to-buildings-and-infrastructure" title="Permalink to this heading">#</a></h1>
@@ -429,9 +444,50 @@ document.write(`
 </ol>
 </section>
 <section id="methodology">
-<h2>Methodology<a class="headerlink" href="#methodology" title="Permalink to this heading">#</a></h2>
-<p>The WB data Lab team developed a multi-step methodology, designed to reduce costs of conducting the analysis while maximizing certainty and frequency of results for damage inventories. Using freely available, bi-weekly satellite radar data (<a class="reference external" href="https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1/overview">Sentinel-1</a>), the team has been running a set of automated algorithms to identify significant “changes” to the underlying infrastructure (with the <a class="reference external" href="https://esa-worldcover.org/en">ESA WorldCover 10m</a> dataset as the baseline) – especially changes in the heights and shapes of features. This analysis is still experimental; it can result in false positives and negatives.</p>
-<p>The team has overlaid radar change detection data with underlying baseline data (described in the previous section) and extracted a list of candidate infrastructure and facilities that may have been damaged.</p>
+<span id="damage-assessment-methodology"></span><h2>Methodology<a class="headerlink" href="#methodology" title="Permalink to this heading">#</a></h2>
+<p>The WB Data Lab Lab team developed a multi-step methodology, designed to reduce costs of conducting the analysis while maximizing certainty and frequency of results for damage inventories. Using freely available, bi-weekly satellite radar data, the team has been running a set of automated algorithms to identify significant “changes” to the underlying infrastructure – especially changes in the heights and shapes of features. This analysis is still experimental; it can result in false positives and negatives.</p>
+<p>The damage assessment analysis relies on the similarity measure computed using SAR medium resolution and openly accessible <a class="reference external" href="https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1/overview">Sentinel-1</a> and the employed methodology can be split into 3 steps:</p>
+<section id="image-similarity-computation">
+<h3>1. Image similarity computation<a class="headerlink" href="#image-similarity-computation" title="Permalink to this heading">#</a></h3>
+<p>This similarity measurement, namely interferometric coherence ranging from <span class="math notranslate nohighlight">\([0,1]\)</span>, provides values of high similarity (usually higher than <span class="math notranslate nohighlight">\(0.6\)</span>) over structures on that had not suffered almost any variation, as for example buildings or man-made structures, while exhibits lower values (usually lower than <span class="math notranslate nohighlight">\(0.4\)</span>) over forest and agricultural areas (especially on large time separation between the acquisition time of the satellite data) over water (usually lower than <span class="math notranslate nohighlight">\(0.3\)</span>) bodies already between consecutive acquisitions.</p>
+<p>We have employed all the Copernicus <a class="reference external" href="https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1/overview">Sentinel-1</a> data acquired over the Gaza strip, which consists in 3 satellite orbits, namely ascending orbit 87 and 160 and descending orbit 94, and we computed all the similarity maps with respect to the first image available for each of the orbits acquired in September 2022 to have time series measurements that will allow us to use a statistical approach to determine changes using anomaly detection method. Each orbit has 12 days repeat pass, so new updated products can be added regularly every 12 days.</p>
+<figure class="align-default" id="id5">
+<img alt="../../_images/damage-assessment-calendar.png" src="../../_images/damage-assessment-calendar.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Calendar with Copernicus Sentinel-1 acquisition dates after the war started on past 7th October 2023 until 9th January 2023.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="change-detection-based-on-time-series-statistics">
+<h3>2. Change detection based on time series statistics<a class="headerlink" href="#change-detection-based-on-time-series-statistics" title="Permalink to this heading">#</a></h3>
+<p>For the time series change detection, we have computed all the data pre-war September 2022 until end September 2023 to compute the statistics in non-war situation, and to use those statistics to classify the newer data acquired during the war period October 2023 until the present time with pixels for which had been detected a change (potentially attributable to war damage) using anomaly detection method with different thresholds (i.e. 3 sigma rule and 2.5 sigma rule).</p>
+<p>The 3-sigma rule is more conservative and provides more conservative results with false alarms regarding the change detections. 3-sigma rule considers as anomaly values that are lower than the average minus 3 times their standard deviation which it means that are lower than the 99.6% of the value’s normal distribution (measured in non-war conditions) or are included in the 0.15% of possible values, and hence, detected as anomalous. Similarly happens for the 2.5 sigma rule, which pixels are considered as anomaly the ones being the 0.65%. This 2.5 sigma rule may increase some more false alarms, while the 3 sigma rule is considered more conservative anomaly detection rule. See example of this empirical rule below.</p>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../../_images/damage-assessment-empirical-rule.jpg"><img alt="../../_images/damage-assessment-empirical-rule.jpg" src="../../_images/damage-assessment-empirical-rule.jpg" style="width: 300.0px; height: 276.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Illustration of the empirical rule</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="infrastructural-damage-assessment-using-the-change-maps-and-the-vector-layers">
+<h3>3. Infrastructural damage assessment using the change maps and the vector layers<a class="headerlink" href="#infrastructural-damage-assessment-using-the-change-maps-and-the-vector-layers" title="Permalink to this heading">#</a></h3>
+<p>For the final assessment of infrastructural damage, in roads, points of interest or buildings, the different layers are overlaid and computed whether each feature has been damage or not. For the different features we have computed their potential damage as follows:</p>
+<ul class="simple">
+<li><p>In case of roads, the layer is split into 10 meters roads, and it is computed whether each of the segments had been damaged or not,</p></li>
+<li><p>In case of the points-of-interest (POI):</p>
+<ul>
+<li><p>Point POIs have been attributed a buffer of 10-meter radius and are overlaid to the change map to detect whether they are likely damaged or not.</p></li>
+<li><p>Area POIs have been overlaid with the change map to detect whether they are likely damaged or not.</p></li>
+</ul>
+</li>
+<li><p>In case of buildings,</p>
+<ul>
+<li><p>Using OpenStreetMap building layer, they are overlaid with the change map and computed which is the percentage (in <span class="math notranslate nohighlight">\([0,1]\)</span> range) of their area which are likely damaged. OSM layers comes also with their possible landuse information that is provided by the OSM layers.</p></li>
+<li><p>Using Microsoft footprint layer, they are overlaid with the change map and computed which is the percentage (in <span class="math notranslate nohighlight">\([0,1]\)</span> range) of their area which are likely damaged, but they do not come with landuse information.</p></li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 <section id="limitations">
 <h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this heading">#</a></h2>
@@ -511,12 +567,12 @@ ACLED is a crowdsourced dataset and is higly likely that the numbers are underre
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../../docs/foundational_datasets_and_data_products.html"
+       href="../../docs/data.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Foundational Datasets and Data Products Summary</p>
+        <p class="prev-next-title">Datasets and Data Products Summary</p>
       </div>
     </a>
     <a class="right-next"
@@ -537,6 +593,7 @@ ACLED is a crowdsourced dataset and is higly likely that the numbers are underre
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
@@ -544,7 +601,12 @@ ACLED is a crowdsourced dataset and is higly likely that the numbers are underre
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">Methodology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methodology">Methodology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#image-similarity-computation">1. Image similarity computation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-detection-based-on-time-series-statistics">2. Change detection based on time series statistics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infrastructural-damage-assessment-using-the-change-maps-and-the-vector-layers">3. Infrastructural damage assessment using the change maps and the vector layers</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
@@ -573,7 +635,7 @@ By Development Data Group
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Dec 19, 2023.
+  Last updated on Jan 17, 2024.
   <br/>
 </p>
   </div>
@@ -597,8 +659,8 @@ By Development Data Group
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>
