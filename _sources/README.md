@@ -11,11 +11,9 @@ Datasets and methods used to generate insights for this project have been prepar
 ```{tableofcontents}
 ```
 
-## Data
+## Contributing
 
-### Data Availability Statement
-
-Restrictions may apply to the data that support the findings of this study. Data received from the private sector through the Development Data Partnership are subject to the terms and conditions of the data license agreement and the "Official Use Only" data classification. These data are available upon request through the [Development Data Partnership](https://datapartnership.org). Licensing and access information for all other datasets are included in the documentation.
+Contributions are welcome! If you’d like to contribute, please follow our [contribution guidelines](docs/CONTRIBUTING).
 
 ## License
 
