@@ -1,12 +1,12 @@
-(foundational-data)=
+(data)=
 
-# Foundational Datasets and Data Products Summary
+# Datasets and Data Products Summary
 
-## Foundational Datasets
+## Datasets
 
-**Foundational Datasets** refer to **all** datasets used in the analytics prepared for a project. The Foundational Datasets table includes a description of the data and their update frequency, as well as access links and contact information for questions about use and access. Users should not require any datasets not included in this table to complete the analytical work for the Data Good.
+**Datasets** refer to **all** datasets used in the analytics prepared for a project. The Datasets table includes a description of the data and their update frequency, as well as access links and contact information for questions about use and access. Users should not require any datasets not included in this table to complete the analytical work for the Data Good.
 
-Following is list of all Foundational Datasets used in this Data Good:
+Following is list of all Datasets used in this Data Good:
 
 ```{note}
 **Project Sharepoint** links are only accessible to the project team. For permissions to access these data, please write to the contact provided. The **Development Data Hub** is the World Bank's central data catalogue and includes meta-data and license information.
@@ -27,11 +27,11 @@ All the datasets and data product images are placed in a [SharePoint folder]([Co
 
 ## Data Products Summary
 
-**Data Products** are produced using the **Foundational Datasets** and can be further used to generate indicators and insights. All Data Products include documentation, references to original data sources (and/or information on how to access them), and a description of their limitations.
+**Data Products** are produced using the **Datasets** and can be further used to generate indicators and insights. All Data Products include documentation, references to original data sources (and/or information on how to access them), and a description of their limitations.
 
 Following is a summary of Data Products used in this Data Good:
 
-| ID  | Name                                       | Description                                                         | Limitations                                                                                                                                                                                    | Foundational Datasets Used (ID#) |
+| ID  | Name                                       | Description                                                         | Limitations                                                                                                                                                                                    | Datasets Used (ID#) |
 | --- | ------------------------------------------ | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
 | A   | Observed changes in NightLight Data        | Weekly aggregated trends in nighttime luminosity                    | Changes in nighttime lights could be driven by multiple factors—such as rescue efforts generating lights, to damages and people leaving high-hit areas causing a reduction in nighttime lights | 1,2                              |
 | B   | Observed Impact of Conflict Events on PoIs | Daily activity of conflict events overlayed with Points of Interest | The Points of Interest are obtained from OSM, which is crowdsourced and does not have a fixed refresh schedule.                                                                                | 1,3,5                            |
