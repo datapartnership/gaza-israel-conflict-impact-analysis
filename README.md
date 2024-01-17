@@ -19,4 +19,4 @@ Restrictions may apply to the data that support the findings of this study. Data
 
 ## License
 
-The repository is licensed under the [World Bank Master Community License Agreement](LICENSE).
+The repository is licensed under the [**Mozilla Public License**](LICENSE).

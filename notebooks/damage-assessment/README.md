@@ -16,12 +16,57 @@ The baseline data used for this analysis is as follows. These data act as an inp
 
 5. [Google Earth Engine](https://earthengine.google.com): The heights of the buildings were obtained from Google Earth Engine. 
 
+(damage-assessment-methodology)= 
 ## Methodology
 
-The WB data Lab team developed a multi-step methodology, designed to reduce costs of conducting the analysis while maximizing certainty and frequency of results for damage inventories. Using freely available, bi-weekly satellite radar data ([Sentinel-1](https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1/overview)), the team has been running a set of automated algorithms to identify significant “changes” to the underlying infrastructure (with the [ESA WorldCover 10m](https://esa-worldcover.org/en) dataset as the baseline) – especially changes in the heights and shapes of features. This analysis is still experimental; it can result in false positives and negatives.  
+The WB Data Lab Lab team developed a multi-step methodology, designed to reduce costs of conducting the analysis while maximizing certainty and frequency of results for damage inventories. Using freely available, bi-weekly satellite radar data, the team has been running a set of automated algorithms to identify significant “changes” to the underlying infrastructure – especially changes in the heights and shapes of features. This analysis is still experimental; it can result in false positives and negatives.   
 
-The team has overlaid radar change detection data with underlying baseline data (described in the previous section) and extracted a list of candidate infrastructure and facilities that may have been damaged. 
+The damage assessment analysis relies on the similarity measure computed using SAR medium resolution and openly accessible [Sentinel-1](https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1/overview) and the employed methodology can be split into 3 steps: 
 
+### 1. Image similarity computation 
+
+This similarity measurement, namely interferometric coherence ranging from $[0,1]$, provides values of high similarity (usually higher than $0.6$) over structures on that had not suffered almost any variation, as for example buildings or man-made structures, while exhibits lower values (usually lower than $0.4$) over forest and agricultural areas (especially on large time separation between the acquisition time of the satellite data) over water (usually lower than $0.3$) bodies already between consecutive acquisitions. 
+
+We have employed all the Copernicus [Sentinel-1](https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1/overview) data acquired over the Gaza strip, which consists in 3 satellite orbits, namely ascending orbit 87 and 160 and descending orbit 94, and we computed all the similarity maps with respect to the first image available for each of the orbits acquired in September 2022 to have time series measurements that will allow us to use a statistical approach to determine changes using anomaly detection method. Each orbit has 12 days repeat pass, so new updated products can be added regularly every 12 days. 
+
+```{figure} ../../docs/images/damage-assessment-calendar.png
+---
+---
+Calendar with Copernicus Sentinel-1 acquisition dates after the war started on past 7th October 2023 until 9th January 2023. 
+```
+
+
+### 2. Change detection based on time series statistics
+
+For the time series change detection, we have computed all the data pre-war September 2022 until end September 2023 to compute the statistics in non-war situation, and to use those statistics to classify the newer data acquired during the war period October 2023 until the present time with pixels for which had been detected a change (potentially attributable to war damage) using anomaly detection method with different thresholds (i.e. 3 sigma rule and 2.5 sigma rule).  
+
+The 3-sigma rule is more conservative and provides more conservative results with false alarms regarding the change detections. 3-sigma rule considers as anomaly values that are lower than the average minus 3 times their standard deviation which it means that are lower than the 99.6% of the value’s normal distribution (measured in non-war conditions) or are included in the 0.15% of possible values, and hence, detected as anomalous. Similarly happens for the 2.5 sigma rule, which pixels are considered as anomaly the ones being the 0.65%. This 2.5 sigma rule may increase some more false alarms, while the 3 sigma rule is considered more conservative anomaly detection rule. See example of this empirical rule below. 
+
+```{figure} ../../docs/images/damage-assessment-empirical-rule.jpg
+---
+scale: 50%
+---
+Illustration of the empirical rule
+```
+
+
+### 3. Infrastructural damage assessment using the change maps and the vector layers
+
+For the final assessment of infrastructural damage, in roads, points of interest or buildings, the different layers are overlaid and computed whether each feature has been damage or not. For the different features we have computed their potential damage as follows: 
+
+- In case of roads, the layer is split into 10 meters roads, and it is computed whether each of the segments had been damaged or not,   
+
+- In case of the points-of-interest (POI): 
+
+    - Point POIs have been attributed a buffer of 10-meter radius and are overlaid to the change map to detect whether they are likely damaged or not. 
+
+    - Area POIs have been overlaid with the change map to detect whether they are likely damaged or not. 
+
+- In case of buildings, 
+
+    - Using OpenStreetMap building layer, they are overlaid with the change map and computed which is the percentage (in $[0,1]$ range) of their area which are likely damaged. OSM layers comes also with their possible landuse information that is provided by the OSM layers. 
+
+    - Using Microsoft footprint layer, they are overlaid with the change map and computed which is the percentage (in $[0,1]$ range) of their area which are likely damaged, but they do not come with landuse information. 
 
 ## Limitations
 

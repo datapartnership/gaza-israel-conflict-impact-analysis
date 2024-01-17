@@ -5,9 +5,9 @@ parts:
   - caption: Introduction to Data Goods
     chapters:
       - file: docs/introduction_to_data_goods
-  - caption: Foundational Datasets
+  - caption: Datasets
     chapters:
-      - file: docs/foundational_datasets_and_data_products.md
+      - file: docs/data
   - caption: Data Products
     chapters:
       - file: notebooks/damage-assessment/README
