@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Nighttime Lights Trends</title>
+    <title>Detection of Solar Panels</title>
   
   
   
@@ -63,12 +63,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/nighttime-lights/README';</script>
-    <link rel="canonical" href="https://worldbank.github.io/https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/notebooks/nighttime-lights/README.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/solar-panel-segmentation/README';</script>
+    <link rel="canonical" href="https://worldbank.github.io/https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/notebooks/solar-panel-segmentation/README.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Nighttime Lights Trends in Gaza and West Bank" href="nighttime-lights.html" />
-    <link rel="prev" title="Visualizing Damage Buldings and Infrastructure in Gaza" href="../damage-assessment/damage-assessment.html" />
+    <link rel="next" title="Run a system through the Panel-Segmentation detection pipeline" href="panel-detection-gaza.html" />
+    <link rel="prev" title="Nighttime Lights Trends in Jordan" href="../nighttime-lights/nighttime-lights-in-jordan.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="Feb 02, 2024"/>
@@ -177,13 +177,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../damage-assessment/damage-assessment.html">Visualizing Damage Buldings and Infrastructure in Gaza</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Nighttime Lights Trends</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="nighttime-lights.html">Nighttime Lights Trends in Gaza and West Bank</a></li>
-<li class="toctree-l2"><a class="reference internal" href="nighttime-lights-in-jordan.html">Nighttime Lights Trends in Jordan</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nighttime-lights/README.html">Nighttime Lights Trends</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../nighttime-lights/nighttime-lights.html">Nighttime Lights Trends in Gaza and West Bank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nighttime-lights/nighttime-lights-in-jordan.html">Nighttime Lights Trends in Jordan</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../solar-panel-segmentation/README.html">Detection of Solar Panels</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../solar-panel-segmentation/panel-detection-gaza.html">Run a system through the Panel-Segmentation detection pipeline</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Detection of Solar Panels</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="panel-detection-gaza.html">Run a system through the Panel-Segmentation detection pipeline</a></li>
 </ul>
 </li>
 </ul>
@@ -261,7 +261,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/edit/main/notebooks/nighttime-lights/README.md" target="_blank"
+      <li><a href="https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/edit/main/notebooks/solar-panel-segmentation/README.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -278,7 +278,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/issues/new?title=Issue%20on%20page%20%2Fnotebooks/nighttime-lights/README.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/issues/new?title=Issue%20on%20page%20%2Fnotebooks/solar-panel-segmentation/README.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -308,7 +308,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/notebooks/nighttime-lights/README.md" target="_blank"
+      <li><a href="../../_sources/notebooks/solar-panel-segmentation/README.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -379,9 +379,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -392,20 +390,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Nighttime Lights Trends</h1>
+    <h1>Detection of Solar Panels</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -415,43 +404,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="nighttime-lights-trends">
-<h1>Nighttime Lights Trends<a class="headerlink" href="#nighttime-lights-trends" title="Permalink to this heading">#</a></h1>
-<p>Analyzing conflict dynamics through the lens of <a class="reference external" href="https://blackmarble.gsfc.nasa.gov">NASA’s Black Marble Nighttime Lights</a> dataset opens a unique window into the often-hidden facets of global unrest. In a world marked by diverse forms of conflict, from armed confrontations to civil unrest, the dataset offers an unconventional yet powerful tool for understanding the ripple effects of these conflicts on human settlements and infrastructure. By tracking nighttime light variations and disruptions, we can unearth vital insights into population displacement, economic destabilization, and the societal impacts of conflict. This analysis explores the potential of the Black Marble Nighttime Lights dataset to not only detect areas affected by conflict but also to quantify the extent of its influence on human lives and livelihoods, providing a valuable perspective on the multifaceted consequences of conflict worldwide.</p>
-<section id="limitations">
-<span id="nighttime-lights-limitations"></span><h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this heading">#</a></h2>
-<p>Using nighttime lights to estimate macroeconomic indicators during conflict may be a valuable approach, but it comes with several assumptions and limitations. Here’s a list of some of the key assumptions and limitations:</p>
-<div class="admonition caution">
-<p class="admonition-title">Caution</p>
-<p><strong>Assumptions:</strong></p>
-<ul class="simple">
-<li><p><strong>Luminosity Reflects Economic Activity:</strong> The approach assumes that the level of nighttime lights is a reliable proxy for economic activity. It presupposes that areas with brighter lights correspond to higher economic productivity.</p></li>
-<li><p><strong>Baseline Data Availability:</strong> It assumes the availability of baseline nighttime lights data before the onset of the conflict. The accuracy of the estimates depends on the quality and relevance of this baseline data.</p></li>
-<li><p><strong>Spatial Distribution:</strong> The method assumes that nighttime lights are evenly distributed within a given geographic area and that changes in luminosity accurately reflect changes in economic activity across all locations.</p></li>
-</ul>
-<p><strong>Limitations:</strong></p>
-<ul class="simple">
-<li><p><strong>Confounding Factors and Data Interpretation:</strong> The approach may require subjective interpretation, as it may not distinguish between reduced lighting due to conflict and reduced lighting due to other factors. Changes in nighttime lights can be influenced by factors other than economic activity, such as energy conservation measures, urban development, or seasonal variations.</p></li>
-<li><p><strong>Generalization:</strong> The approach might lead to overgeneralization, as a reduction in nighttime lights can be associated with various economic outcomes, from minor disruptions to severe economic downturns.</p></li>
-<li><p><strong>Alternative Explanations:</strong> Changes in nighttime lights can result from factors other than conflict, such as urban development, changes in economic activities, or natural disasters. Therefore, it may not always be clear whether a decline in nighttime lights is solely due to conflict.</p></li>
-<li><p><strong>Geopolitical Factors:</strong> The dataset may be subject to geopolitical biases, with some areas having less comprehensive coverage due to political reasons.</p></li>
-<li><p><strong>Data Lag:</strong> There can be a significant time lag between the occurrence of a conflict event and its reflection in the nighttime lights dataset. This lag may limit the dataset’s utility for real-time conflict monitoring.</p></li>
-<li><p><strong>Resolution and Urban Bias:</strong> The dataset’s spatial resolution may not be fine enough to capture small villages or isolated conflict events. It may also have an urban bias, making it less suitable for analyzing rural or remote conflicts.</p></li>
-</ul>
-</div>
-<p>To address these assumptions and limitations, it is crucial to complement nighttime lights data analysis with other sources of information and adopt a cautious and context-aware approach when interpreting the findings.</p>
-</section>
-<section id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
-<p><span id="id1"></span></p>
-<div class="docutils container" id="id2">
-<dl class="citation">
-<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>Miguel O. Román, Zhuosen Wang, Qingsong Sun, Virginia Kalb, Steven D. Miller, Andrew Molthan, Lori Schultz, Jordan Bell, Eleanor C. Stokes, Bhartendu Pandey, Karen C. Seto, Dorothy Hall, Tomohiro Oda, Robert E. Wolfe, Gary Lin, Navid Golpayegani, Sadashiva Devadiga, Carol Davidson, Sudipta Sarkar, Cid Praderas, Jeffrey Schmaltz, Ryan Boller, Joshua Stevens, Olga M. Ramos González, Elizabeth Padilla, José Alonso, Yasmín Detrés, Roy Armstrong, Ismael Miranda, Yasmín Conte, Nitza Marrero, Kytt MacManus, Thomas Esch, and Edward J. Masuoka. Nasa's black marble nighttime lights product suite. <em>Remote Sensing of Environment</em>, 210:113–143, 2018. URL: <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S003442571830110X">https://www.sciencedirect.com/science/article/pii/S003442571830110X</a>, <a class="reference external" href="https://doi.org/https://doi.org/10.1016/j.rse.2018.03.017">doi:https://doi.org/10.1016/j.rse.2018.03.017</a>.</p>
-</dd>
-</dl>
-</div>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="detection-of-solar-panels">
+<h1>Detection of Solar Panels<a class="headerlink" href="#detection-of-solar-panels" title="Permalink to this heading">#</a></h1>
+<p>This section contains a Computer Vision (CV) project aimed at detecting and identifying solar panels in the Gaza Strip. The project utilizes image processing techniques and machine learning to analyze satellite or aerial imagery for the presence of solar panels.</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -469,7 +424,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./notebooks/nighttime-lights"
+            path: "./notebooks/solar-panel-segmentation"
         },
         predefinedOutput: true
     }
@@ -487,20 +442,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../damage-assessment/damage-assessment.html"
+       href="../nighttime-lights/nighttime-lights-in-jordan.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Visualizing Damage Buldings and Infrastructure in Gaza</p>
+        <p class="prev-next-title">Nighttime Lights Trends in Jordan</p>
       </div>
     </a>
     <a class="right-next"
-       href="nighttime-lights.html"
+       href="panel-detection-gaza.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Nighttime Lights Trends in Gaza and West Bank</p>
+        <p class="prev-next-title">Run a system through the Panel-Segmentation detection pipeline</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -511,21 +466,7 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitations">Limitations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
+                <div class="bd-sidebar-secondary bd-toc"></div>
               
             
           </div>
