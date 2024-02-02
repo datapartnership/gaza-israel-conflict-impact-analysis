@@ -5,8 +5,6 @@ parts:
   - caption: Introduction to Data Goods
     chapters:
       - file: docs/introduction_to_data_goods
-  - caption: Datasets
-    chapters:
       - file: docs/data
   - caption: Data Products
     chapters:
@@ -18,6 +16,9 @@ parts:
         sections:
           - file: notebooks/nighttime-lights/nighttime-lights.ipynb
           - file: notebooks/nighttime-lights/nighttime-lights-in-jordan.ipynb
+      - file: notebooks/solar-panel-segmentation/README
+        sections:
+          - file: notebooks/solar-panel-segmentation/panel-detection-gaza.ipynb
   - caption: Acknowledgements
     chapters:
       - file: docs/team
