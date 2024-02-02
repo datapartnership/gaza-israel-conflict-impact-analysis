@@ -30,13 +30,13 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
@@ -48,9 +48,10 @@
     <script src="../_static/underscore.js"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -163,7 +164,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction to Data Goods</span></p>
 <ul class="current nav bd-sidenav">
@@ -429,7 +441,7 @@ document.write(`
 <p><strong>Project Sharepoint</strong> links are only accessible to the project team. For permissions to access these data, please write to the contact provided. The <strong>Development Data Hub</strong> is the World Bank’s central data catalogue and includes meta-data and license information.</p>
 </div>
 <p>Where feasible, all datasets that can be obtained through the Development Data Hub have been placed in a special collection: <em>forthcoming</em></p>
-<p>All the datasets and data product images are placed in a <span class="xref myst">SharePoint folder</span> and access is given to the teams.</p>
+<p>All the datasets and data product images are placed in a <a class="reference internal" href="#%5BContinue%5D(https://worldbankgroup.sharepoint.com.mcas.ms/teams/DevelopmentDataPartnershipCommunity-WBGroup/Shared%20Documents/Forms/AllItems.aspx?csf=1&amp;web=1&amp;e=Yvwh8r&amp;cid=fccdf23e-94d5-48bf-b75d-0af291138bde&amp;FolderCTID=0x012000CFAB9FF0F938A64EBB297E7E16BDFCFD&amp;id=%2Fteams%2FDevelopmentDataPartnershipCommunity-WBGroup%2FShared%20Documents%2FProjects%2FData%20Lab%2FGaza%20Israel%20Conflict%20Impact%20Analysis&amp;viewid=80cdadb3-8bb3-47ae-8b18-c1dd89c373c5)"><span class="xref myst">SharePoint folder</span></a> and access is given to the teams.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>ID</p></th>
@@ -479,7 +491,7 @@ document.write(`
 <td><p>Open</p></td>
 <td><p>Points of Interest</p></td>
 <td><p>N/A</p></td>
-<td><p><a class="reference external" href="https://data.humdata.org/search?q=palestine&amp;ext_search_source=main-nav">HdX</a></p></td>
+<td><p><a class="reference external" href="https://data.humdata.org/search?q=palestine&amp;amp;ext_search_source=main-nav">HdX</a></p></td>
 <td><p><a class="reference external" href="mailto:datalab&#37;&#52;&#48;worldbank&#46;org">Data Lab</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>6</p></td>
