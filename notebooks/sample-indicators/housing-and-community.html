@@ -428,14 +428,15 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-damaged-residential-buildings-in-gaza-as-of-feb-2nd-2024">Percentage of damaged residential buildings in Gaza as of Feb 2nd 2024</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-and-limitations">Observations and Limitations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-places-of-worship-damaged">Percentage of Places of Worship Damaged</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-people-who-potentially-impacted-from-the-damage-to-residential-buildings">Percentage of people who potentially impacted from the damage to residential buildings</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations">Observations</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-people-who-potentially-impacted-from-the-damage-to-residential-buildings">Percentage of people who potentially impacted from the damage to residential buildings</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Observations</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-schools-and-places-of-worship-damaged">Percentage of schools and places of worship damaged</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-schools-and-public-amenities-damaged">Percentage of schools and public amenities damaged</a></li>
 </ul>
             </nav>
         </div>
@@ -467,18 +468,18 @@ document.write(`
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: Percentage of Damaged Residential Buildings as of February 2nd 2024&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.03</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.56</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: Percentage of Damaged Residential Buildings as of February 2nd 2024&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.03</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.57</span><span class="p">)</span>
 
-<span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s2">&quot;perc&quot;</span><span class="p">,</span> <span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">)[</span>
+<span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s2">&quot;perc&quot;</span><span class="p">,</span> <span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span>
     <span class="p">[</span><span class="s2">&quot;residential&quot;</span><span class="p">]</span>
-<span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;barh&quot;</span><span class="p">,</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+<span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;ADM2_EN&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;barh&quot;</span><span class="p">,</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
 
 <span class="c1"># Add labels and customization</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;% Buildings Damaged&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Adm 2&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;ADM2_EN&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">(),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="c1">#ax.set_yticklabels(df[&quot;ADM2_EN&quot;].unique(), fontsize=12)</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s2">&quot;right&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s2">&quot;top&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
@@ -493,7 +494,7 @@ document.write(`
 
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span>
     <span class="s2">&quot;Estimated percentage of damaged residential buildings for each second-level administrative division&quot;</span><span class="p">,</span>
-    <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;left&#39;</span>
 <span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mi">0</span><span class="p">,</span>
@@ -511,15 +512,71 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/efa954d3afa9dccce7466b1067a7cbf1ec66947d6f2fa4bef1f3cb87f3269d8a.svg" src="../../_images/efa954d3afa9dccce7466b1067a7cbf1ec66947d6f2fa4bef1f3cb87f3269d8a.svg" /></div>
+<img alt="../../_images/538db5677cb95117f6ec57fac7b6a2ad77946c31ba554c2e2376f1535bc3a54f.svg" src="../../_images/538db5677cb95117f6ec57fac7b6a2ad77946c31ba554c2e2376f1535bc3a54f.svg" /></div>
 </div>
-<section id="observations">
-<h3>Observations<a class="headerlink" href="#observations" title="Permalink to this heading">#</a></h3>
+<section id="observations-and-limitations">
+<h3>Observations and Limitations<a class="headerlink" href="#observations-and-limitations" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Nearly 70% of the residential buildings in Khan Younis are damaged. The attacks on October 7th first started in the Norther parts of Gaza closer to Gaza city. of the residential buidlings in ADM2 regions of Gaza, Deir Al-Balah has the highest reported on OpenStreetMaps with 439 buildings. Khan Younis, as a reported number of buildings of 242. This could potentially also be because of the announcement of evacuation zones in Khan Younis by <a class="reference external" href="https://www.reuters.com/graphics/ISRAEL-PALESTINIANS/MAPS/movajdladpa/">Israel Defense Forces</a></p></li>
-<li><p>North Gaza has the second highest % of damaged buildings. The attacks started in that region on October 7th (source)</p></li>
+<li><p>Nearly 70% of the residential buildings in Gaza are damaged. The attacks on October 7th first started in the Northern parts of Gaza closer to Gaza city. In the OpenStreetMap database, Deir Al-Balah has 439 reported residential buildings. Khan Younis has 242, Gaza has 154, North Gaza has 21 and Rafah has only 7 reported residential buildings.</p></li>
+<li><p>Khan Younis was declared an evacuation zone by the Israeli Armed Forces which could be a potential rason for the high number of damaged buildings.</p></li>
 </ul>
 </section>
+</section>
+<section id="percentage-of-places-of-worship-damaged">
+<h2>Percentage of Places of Worship Damaged<a class="headerlink" href="#percentage-of-places-of-worship-damaged" title="Permalink to this heading">#</a></h2>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: Percentage of Damaged Mosques as of February 2nd 2024&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.03</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s2">&quot;perc&quot;</span><span class="p">,</span> <span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">,</span> <span class="n">observed</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span>
+    <span class="p">[</span><span class="s2">&quot;mosque&quot;</span><span class="p">]</span>
+<span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;ADM2_EN&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;barh&quot;</span><span class="p">,</span> <span class="n">legend</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Add labels and customization</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;% Mosques Damaged&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Adm 2&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="c1">#ax.set_yticklabels(df[&quot;ADM2_EN&quot;].unique(), fontsize=12)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s2">&quot;right&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s2">&quot;top&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Only show ticks on the left and bottom spines</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_ticks_position</span><span class="p">(</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_ticks_position</span><span class="p">(</span><span class="s2">&quot;bottom&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">FuncFormatter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">y</span><span class="p">,</span> <span class="n">_</span><span class="p">:</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">%&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">y</span><span class="p">)))</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="c1">#ax.legend()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span>
+    <span class="s2">&quot;Estimated percentage of damaged mosques for each second-level administrative division&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;left&#39;</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="o">-</span><span class="mf">0.2</span><span class="p">,</span>
+    <span class="s2">&quot;Source: World Bank calculations derived from OpenStreetMap and Sentinel-1 data.&quot;</span><span class="p">,</span>
+    <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span>
+    <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
+    <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span>
+    <span class="n">weight</span><span class="o">=</span><span class="s2">&quot;normal&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../../_images/02d09c0fa38d040df32311b2f592fbe3e23df019fa8bbb46d3831b3cd8a087ef.svg" src="../../_images/02d09c0fa38d040df32311b2f592fbe3e23df019fa8bbb46d3831b3cd8a087ef.svg" /></div>
+</div>
 </section>
 <section id="percentage-of-people-who-potentially-impacted-from-the-damage-to-residential-buildings">
 <h2>Percentage of people who potentially impacted from the damage to residential buildings<a class="headerlink" href="#percentage-of-people-who-potentially-impacted-from-the-damage-to-residential-buildings" title="Permalink to this heading">#</a></h2>
@@ -530,15 +587,15 @@ document.write(`
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: People living in residential areas that were impacted&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.53</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: People living in residential areas that were impacted as of Feb 2nd 2024&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.51</span><span class="p">)</span>
 
-<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;ADM2_EN&#39;</span><span class="p">,</span> <span class="s1">&#39;damage_categories&#39;</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span> <span class="s1">&#39;Z&#39;</span><span class="p">,</span> <span class="s1">&#39;ADM2_EN&#39;</span><span class="p">,</span><span class="s1">&#39;damage_categories&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;ADM2_EN&#39;</span><span class="p">,</span> <span class="s1">&#39;damage_categories&#39;</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span> <span class="s1">&#39;Z&#39;</span><span class="p">,</span> <span class="s1">&#39;ADM2_EN&#39;</span><span class="p">,</span><span class="s1">&#39;damage_categories&#39;</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
     <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;barh&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;#D62728&#39;</span><span class="p">,</span> <span class="s1">&#39;#FF7F0E&#39;</span><span class="p">,</span> <span class="s1">&#39;#9467BD&#39;</span><span class="p">,</span> <span class="s1">&#39;#17BECF&#39;</span><span class="p">]</span>
 <span class="p">)</span>
 
 <span class="c1"># Add labels and customization</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;People living in areas that experienced impact&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;People living in residential buildings that were damaged&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
 <span class="c1">#ax.xaxis.set_major_formatter(FuncFormatter(lambda y, _: &quot;{}%&quot;.format(y)))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Adm 2&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;ADM2_EN&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">(),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
@@ -557,12 +614,12 @@ document.write(`
 <span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mi">0</span><span class="p">,</span>
-    <span class="o">-</span><span class="mf">0.1</span><span class="p">,</span>
-    <span class="s2">&quot;Source: World Bank calculations derived from OpenStreetMap and Sentinel-1 data. Low damage represents a score of average damage in the 1km*1km grid to be less than 0.2.&quot;</span><span class="p">,</span>
+    <span class="o">-</span><span class="mf">0.12</span><span class="p">,</span>
+    <span class="s2">&quot;Source: Damage estimates are from World Bank calculations derived from OpenStreetMap and Sentinel-1 data. Population desntiy estimates from WorldPop.</span><span class="se">\n</span><span class="s2"> Damage from low to high is a categorization of mean damage in the 1km*1km grid. &quot;</span><span class="p">,</span>
     <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span>
     <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
     <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span>
-    <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span>
     <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span>
     <span class="n">weight</span><span class="o">=</span><span class="s2">&quot;normal&quot;</span><span class="p">,</span>
 <span class="p">);</span>
@@ -571,17 +628,17 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/152f2b63d074c699c645f4f84411faa7212f27f8540fe9702204af33c4f75ca3.svg" src="../../_images/152f2b63d074c699c645f4f84411faa7212f27f8540fe9702204af33c4f75ca3.svg" /></div>
+<img alt="../../_images/4529cc71bb53085d70aff6874751768c4fdf77ec9bdb7af0e25908d4ee8ac23a.svg" src="../../_images/4529cc71bb53085d70aff6874751768c4fdf77ec9bdb7af0e25908d4ee8ac23a.svg" /></div>
 </div>
-<section id="id1">
-<h3>Observations<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<section id="observations">
+<h3>Observations<a class="headerlink" href="#observations" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Both North Gaza (523k) and Gaza (869k) have higher population than Khan Younis (476k). This is a potential reason for why the damage is higher in Khan Younis but the people impacted are greater in the other two administrative regions.</p></li>
 </ul>
 </section>
 </section>
-<section id="percentage-of-schools-and-places-of-worship-damaged">
-<h2>Percentage of schools and places of worship damaged<a class="headerlink" href="#percentage-of-schools-and-places-of-worship-damaged" title="Permalink to this heading">#</a></h2>
+<section id="percentage-of-schools-and-public-amenities-damaged">
+<h2>Percentage of schools and public amenities damaged<a class="headerlink" href="#percentage-of-schools-and-public-amenities-damaged" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -590,9 +647,9 @@ document.write(`
 </summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: Percentage of Damaged Points of Interest&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.01</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: Percentage of Damaged Points of Interest&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.33</span><span class="p">)</span>
 
-<span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s2">&quot;perc&quot;</span><span class="p">,</span> <span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">)[[</span><span class="s1">&#39;Education&#39;</span><span class="p">,</span> <span class="s1">&#39;Public Amenities&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+<span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s2">&quot;perc&quot;</span><span class="p">,</span> <span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="kc">False</span><span class="p">)[[</span><span class="s1">&#39;Education&#39;</span><span class="p">,</span> <span class="s1">&#39;Public Amenities&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
     <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;barh&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">TableauMedium_10</span><span class="o">.</span><span class="n">mpl_colors</span>
 <span class="p">)</span>
 
@@ -600,7 +657,7 @@ document.write(`
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;% Damaged Points of Interest&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">FuncFormatter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">y</span><span class="p">,</span> <span class="n">_</span><span class="p">:</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">%&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">y</span><span class="p">)))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Adm 2&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;ADM2_EN&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">(),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="c1">#ax.set_yticklabels(df[&quot;ADM2_EN&quot;].unique(), fontsize=12)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s2">&quot;right&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s2">&quot;top&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
 
@@ -612,7 +669,7 @@ document.write(`
 
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span>
     <span class="s2">&quot;Estimated percentage of damaged points of interest for each second-level administrative division&quot;</span><span class="p">,</span>
-    <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;left&#39;</span>
 <span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mi">0</span><span class="p">,</span>
@@ -630,7 +687,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/b4c617683b923adbd8a747f420c3ee944c4f43dcda8ab0c5925dd3efd8dfd648.svg" src="../../_images/b4c617683b923adbd8a747f420c3ee944c4f43dcda8ab0c5925dd3efd8dfd648.svg" /></div>
+<img alt="../../_images/6c7e6f7c9a9655ffff2a9242d2c9c4d0642733bb3f8035f6dbf611841fb714a4.svg" src="../../_images/6c7e6f7c9a9655ffff2a9242d2c9c4d0642733bb3f8035f6dbf611841fb714a4.svg" /></div>
 </div>
 </section>
 </section>
@@ -700,14 +757,15 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-damaged-residential-buildings-in-gaza-as-of-feb-2nd-2024">Percentage of damaged residential buildings in Gaza as of Feb 2nd 2024</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations-and-limitations">Observations and Limitations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-places-of-worship-damaged">Percentage of Places of Worship Damaged</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-people-who-potentially-impacted-from-the-damage-to-residential-buildings">Percentage of people who potentially impacted from the damage to residential buildings</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#observations">Observations</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-people-who-potentially-impacted-from-the-damage-to-residential-buildings">Percentage of people who potentially impacted from the damage to residential buildings</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Observations</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-schools-and-places-of-worship-damaged">Percentage of schools and places of worship damaged</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-schools-and-public-amenities-damaged">Percentage of schools and public amenities damaged</a></li>
 </ul>
   </nav></div>
 
