@@ -65,7 +65,7 @@ To build the documentation locally, after (1) and (2) above, please follow these
 - Install the documentation dependencies:
 
   ```shell
-    pip install -r docs/requirements/xt
+    pip install -r docs/requirements.txt
   ```
 
 - Build the documentation:
