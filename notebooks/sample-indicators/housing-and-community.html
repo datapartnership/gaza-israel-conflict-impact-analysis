@@ -749,7 +749,7 @@ document.write(`
 <h2>Percentage of Residential Buildings Damaged<a class="headerlink" href="#percentage-of-residential-buildings-damaged" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/3fb0917925876a39e83df567284962aed6d4e243e43b484d25f41eca4a34c951.svg" src="../../_images/3fb0917925876a39e83df567284962aed6d4e243e43b484d25f41eca4a34c951.svg" /></div>
+<img alt="../../_images/4e28f30a4e4150b91487257fe9270fae64398202690f7c9eb47cecb4dcd1b6a4.svg" src="../../_images/4e28f30a4e4150b91487257fe9270fae64398202690f7c9eb47cecb4dcd1b6a4.svg" /></div>
 </div>
 <section id="observations-and-limitations">
 <h3>Observations and Limitations<a class="headerlink" href="#observations-and-limitations" title="Permalink to this heading">#</a></h3>
@@ -770,8 +770,8 @@ document.write(`
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: Percentage of Places of Worship Damaged as of February 2nd 2024&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.03</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.55</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: Percentage of Places of Worship Damaged as of February 2nd 2024&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.99</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.49</span><span class="p">)</span>
 
 <span class="n">absolute_damage_numbers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">places_of_worship</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s2">&quot;damaged&quot;</span><span class="p">,</span> <span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;ADM2_EN&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span><span class="s2">&quot;places_of_worship&quot;</span><span class="p">])</span>
 
@@ -804,7 +804,7 @@ document.write(`
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mi">0</span><span class="p">,</span>
     <span class="o">-</span><span class="mf">0.23</span><span class="p">,</span>
-    <span class="s2">&quot;On X: Percentage of places of worship damaged. Inside Bar: Absolute number of places of worship damaged On Y: Governororates from North to South. </span><span class="se">\n</span><span class="s2">Places of worship include all points tagged as &#39;mosque&#39;, &#39;church&#39; and &#39;religious&#39;. 99</span><span class="si">% o</span><span class="s2">f the dataset is of mosques alone.</span><span class="se">\n</span><span class="s2">Source: World Bank calculations derived from OpenStreetMap and Sentinel-1 data.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;On X: Percentage of places of worship damaged. Inside Bar: Absolute number of places of worship damaged On Y: Governorate from North to South. </span><span class="se">\n</span><span class="s2">Places of worship include all points tagged as &#39;mosque&#39;, &#39;church&#39; and &#39;religious&#39;. 99</span><span class="si">% o</span><span class="s2">f the dataset is of mosques alone.</span><span class="se">\n</span><span class="s2">Source: World Bank calculations derived from OpenStreetMap and Sentinel-1 data.&quot;</span><span class="p">,</span>
     <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span>
     <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
     <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span>
@@ -825,7 +825,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/4abcdb26e782cbc2dd54143822b592a39b8d623546c3b43a2adedda25085ffd1.svg" src="../../_images/4abcdb26e782cbc2dd54143822b592a39b8d623546c3b43a2adedda25085ffd1.svg" /></div>
+<img alt="../../_images/ebdb7d25b718910781a2c9bd9a3443447f386b277a4bdb0747168c805604306d.svg" src="../../_images/ebdb7d25b718910781a2c9bd9a3443447f386b277a4bdb0747168c805604306d.svg" /></div>
 </div>
 <section id="id1">
 <h3>Observations and Limitations<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
@@ -841,7 +841,7 @@ document.write(`
 <h2>Percentage of People Living in Neighborhoods with Damaged Buildings<a class="headerlink" href="#percentage-of-people-living-in-neighborhoods-with-damaged-buildings" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/1b9814f8420740bae91be7f2d66db5cdd0fc6354f86dd89294a2a0faee086285.svg" src="../../_images/1b9814f8420740bae91be7f2d66db5cdd0fc6354f86dd89294a2a0faee086285.svg" /></div>
+<img alt="../../_images/32e7fc18187915738232a079b8322219f7f1bd2d3524ba1dc11ae64f08809ed1.svg" src="../../_images/32e7fc18187915738232a079b8322219f7f1bd2d3524ba1dc11ae64f08809ed1.svg" /></div>
 </div>
 <section id="id2">
 <h3>Observations<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
@@ -890,8 +890,8 @@ document.write(`
 <span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mi">0</span><span class="p">,</span>
-    <span class="o">-</span><span class="mf">0.14</span><span class="p">,</span>
-    <span class="s2">&quot;On X: Percentage of places of education damaged. Inside Bar: Absolute number of places of education damaged On Y: Governororates from North to South. </span><span class="se">\n</span><span class="s2">Places of education consist of buildings tagged &#39;schools&#39;, &#39;colleges&#39;, &#39;universities&#39;, &#39;kindergarten&#39;</span><span class="se">\n</span><span class="s2">Source: World Bank calculations derived from OpenStreetMap and Sentinel-1 data.&quot;</span><span class="p">,</span>
+    <span class="o">-</span><span class="mf">0.17</span><span class="p">,</span>
+    <span class="s2">&quot;On X: Percentage of places of education damaged. Inside Bar: Absolute number of places of education damaged On Y: Governorate from North to South. </span><span class="se">\n</span><span class="s2">Places of education consist of buildings tagged &#39;schools&#39;, &#39;colleges&#39;, &#39;universities&#39;, &#39;kindergarten&#39;</span><span class="se">\n</span><span class="s2">Source: World Bank calculations derived from OpenStreetMap and Sentinel-1 data.&quot;</span><span class="p">,</span>
     <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span>
     <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
     <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span>
@@ -912,7 +912,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/893030d7c0f107c6111cb7161562a48a1b8e8a7410ed24f619c204157ea051a7.svg" src="../../_images/893030d7c0f107c6111cb7161562a48a1b8e8a7410ed24f619c204157ea051a7.svg" /></div>
+<img alt="../../_images/85ae4abc67e366642d1db09d2146114e3b372161677282f0fe7870e2537747b9.svg" src="../../_images/85ae4abc67e366642d1db09d2146114e3b372161677282f0fe7870e2537747b9.svg" /></div>
 </div>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
@@ -921,8 +921,8 @@ document.write(`
 <span class="expanded">Hide code cell source</span>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: Percentage of Public Amenities Damaged as of February 2nd 2024&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.99</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.54</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: Percentage of Public Amenities Damaged as of February 2nd 2024&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.99</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.49</span><span class="p">)</span>
 
 <span class="n">absolute_damage_numbers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">public_amenities</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s2">&quot;damaged&quot;</span><span class="p">,</span> <span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;ADM2_EN&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span><span class="s2">&quot;damaged&quot;</span><span class="p">])</span>
 
@@ -951,8 +951,8 @@ document.write(`
 <span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
     <span class="mi">0</span><span class="p">,</span>
-    <span class="o">-</span><span class="mf">0.15</span><span class="p">,</span>
-    <span class="s2">&quot;On X: Percentage of public amenities damaged. Inside Bar: Absolute number of public amenities damaged On Y: Governororates from North to South. </span><span class="se">\n</span><span class="s2">Public amenities consist of &#39;public_building&#39;, &#39;police&#39;, &#39;courthouse&#39;, &#39;library&#39;, &#39;monument&#39;, &#39;post_office&#39;, &#39;memorial&#39;, &#39;community_centre&#39;, &#39;town_hall&#39;, &#39;museum&#39;, &#39;arts_centre&#39;, &#39;sports_centre&#39;, &#39;tourist_info&#39;, &#39;fire_station&#39;</span><span class="se">\n</span><span class="s2">Source: World Bank calculations derived from OpenStreetMap and Sentinel-1 data.&quot;</span><span class="p">,</span>
+    <span class="o">-</span><span class="mf">0.17</span><span class="p">,</span>
+    <span class="s2">&quot;On X: Percentage of public amenities damaged. Inside Bar: Absolute number of public amenities damaged On Y: Governorate from North to South. </span><span class="se">\n</span><span class="s2">Public amenities consist of &#39;public_building&#39;, &#39;police&#39;, &#39;courthouse&#39;, &#39;library&#39;, &#39;monument&#39;, &#39;post_office&#39;, &#39;memorial&#39;, &#39;community_centre&#39;, &#39;town_hall&#39;, &#39;museum&#39;, &#39;arts_centre&#39;, &#39;sports_centre&#39;, &#39;tourist_info&#39;, &#39;fire_station&#39;</span><span class="se">\n</span><span class="s2">Source: World Bank calculations derived from OpenStreetMap and Sentinel-1 data.&quot;</span><span class="p">,</span>
     <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">,</span>
     <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span>
     <span class="n">transform</span><span class="o">=</span><span class="n">ax</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span>
@@ -973,7 +973,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/69217c6a78023d60164bc2b688426c32818870558719a055ab117ad3ba8f831c.svg" src="../../_images/69217c6a78023d60164bc2b688426c32818870558719a055ab117ad3ba8f831c.svg" /></div>
+<img alt="../../_images/8f54a303873a370284682dc39837c458d0a8f6774e06b656200fd067b0814f82.svg" src="../../_images/8f54a303873a370284682dc39837c458d0a8f6774e06b656200fd067b0814f82.svg" /></div>
 </div>
 </section>
 <section id="percentage-of-residential-buildings-without-observed-nighttime-lights">
