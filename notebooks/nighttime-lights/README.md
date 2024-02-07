@@ -42,5 +42,3 @@ To address these assumptions and limitations, it is crucial to complement nightt
 :filter: docname in docnames
 :style: plain
 ```
-
-
