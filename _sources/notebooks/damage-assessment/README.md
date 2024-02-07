@@ -2,26 +2,6 @@
 
 The situation in Gaza-Israel has escalated since October 2023. To allow World Bank Staff to estimate the damage undertaken to buildings and points of interest, the Data Lab team conducted a damage assessment using satellite Interferometric Synthetic Aperture Radar (InSAR) imagery.
 
-You can now interact with this map by selecting/deselecting different damage layers to visualize where buildings are most impacted in the Gaza Strip. Upon visual inspection, you can see:
-
-1. **Damage:** You can select and deselect the layers to see damages to roads, buildings and points of interest. The damage value ranges from $[0,1]$, with $1$ indicating higher level of damage.
-2. **Conflict:** You can select this layer to view areas wit reported events and fatalities.
-
-```{note}
-The results shown in this analysis only reflect the damages until **Febraury 2, 2024**. As the team completes further analysis, the notebook will be updated. 
-```
-
-```{figure} ../../docs/images/logo.png
----
-height: 0px
----
-Damage assessment in the Gaza Strip utilizing SAR imagery to evaluate the extent of destruction The damage map above is based on preliminary estimates and have not been verified through field survey or satellite imagery. It does not reflect the final estimations by the World Bank. Country borders or names do not necessarily reflect the World Bank Group's official position. This map is for illustrative purposes and does not imply the expression of any opinion on the part of the World Bank, concerning the legal status of any country or territory or concerning the delimitation of frontiers or boundaries.
-```
-
-```{note}
-The results shown in this analysis only reflect the damages until **Febraury 2, 2024**. As the team completes further analysis, the notebook will be updated. 
-```
-
 ## Data
 
 The baseline data used for this analysis is as follows. These data act as an input to damage assessment, or add another layer of information to estimate the impact of damage to infrastructure and people of Gaza.
