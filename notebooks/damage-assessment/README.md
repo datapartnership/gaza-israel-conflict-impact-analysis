@@ -33,12 +33,12 @@ We have employed all the Copernicus [Sentinel-1](https://sentinels.copernicus.eu
 ```{figure} ../../docs/images/damage-assessment-calendar.png
 ---
 ---
-Calendar with Copernicus Sentinel-1 acquisition dates after the war started on past 7th October 2023 until 9th January 2023. 
+Calendar with Copernicus Sentinel-1 acquisition dates after the war started on past 7th October 2023 until 9th January 2023.
 ```
 
 ### 2. Change detection based on time series statistics
 
-For the time series change detection, we have computed all the data pre-war September 2022 until end September 2023 to compute the statistics in non-war situation, and to use those statistics to classify the newer data acquired during the war period October 2023 until the present time with pixels for which had been detected a change (potentially attributable to war damage) using anomaly detection method with different thresholds (i.e. 3 sigma rule and 2.5 sigma rule).  
+For the time series change detection, we have computed all the data pre-war September 2022 until end September 2023 to compute the statistics in non-war situation, and to use those statistics to classify the newer data acquired during the war period October 2023 until the present time with pixels for which had been detected a change (potentially attributable to war damage) using anomaly detection method with different thresholds (i.e. 3 sigma rule and 2.5 sigma rule).
 
 The 3-sigma rule is more conservative and provides more conservative results with false alarms regarding the change detections. 3-sigma rule considers as anomaly values that are lower than the average minus 3 times their standard deviation which it means that are lower than the 99.6% of the value’s normal distribution (measured in non-war conditions) or are included in the 0.15% of possible values, and hence, detected as anomalous. Similarly happens for the 2.5 sigma rule, which pixels are considered as anomaly the ones being the 0.65%. This 2.5 sigma rule may increase some more false alarms, while the 3 sigma rule is considered more conservative anomaly detection rule. See example of this empirical rule below.
 
@@ -70,7 +70,7 @@ For the final assessment of infrastructural damage, in roads, points of interest
 ## Limitations
 
 ```{important}
-The following damage assessment maps are based on preliminary estimates and have not been verified through field survey or satellite imagery. They do not reflect the final estimations by the [World Bank](https://www.worldbank.org/en/country/westbankandgaza). The project team is currently working on procuring high resolution imagery to verify whether the buildings identified as damaged have collapsed or experienced impact. 
+The following damage assessment maps are based on preliminary estimates and have not been verified through field survey or satellite imagery. They do not reflect the final estimations by the [World Bank](https://www.worldbank.org/en/country/westbankandgaza). The project team is currently working on procuring high resolution imagery to verify whether the buildings identified as damaged have collapsed or experienced impact.
 ```
 
 ```{caution}
@@ -83,13 +83,13 @@ Using OpenStreetMap (OSM) and Interferometric Synthetic Aperture Radar (InSAR) f
 - **Temporal Limitations:**
     - **Data Timeliness:** OSM data might not be up to date due to infrequent updates or changes in the landscape that haven't been reflected yet.
     - **InSAR Timing:** InSAR data might not capture the most recent changes or damages, especially in rapidly evolving situations where damage continues to occur after the data collection period.
-    
+
 - **Contextual Understanding:**
     - **Local Knowledge:** OSM data might lack contextual information crucial for assessing damages accurately, such as the original state of buildings or variations in construction materials.
     - **Verification Challenges:** Verifying damages solely based on remote sensing data might lack the on-ground verification necessary for a comprehensive understanding of the situation.
 
 - **Conflict Data**
-ACLED is a crowdsourced dataset and is higly likely that the numbers are underreported. ACLED keep changing their data based on local validation. 
+ACLED is a crowdsourced dataset and is higly likely that the numbers are underreported. ACLED keep changing their data based on local validation.
 ```
 
 ## References

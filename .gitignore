@@ -91,4 +91,5 @@ _build/
 # python-dotenv
 .env
 
-/data
+# Project-specific
+data/
