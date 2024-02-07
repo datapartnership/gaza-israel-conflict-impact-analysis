@@ -11,13 +11,15 @@ You can now interact with this map by selecting/deselecting different damage lay
 The results shown in this analysis only reflect the damages until **Febraury 2, 2024**. As the team completes further analysis, the notebook will be updated. 
 ```
 
-<iframe width="100%" height="500px" src="https://studio.foursquare.com/public/26ba3dfb-0770-4cc6-b6fa-2ee2878580fc/embed" frameborder="0" allowfullscreen></iframe>
-
 ```{figure} ../../docs/images/logo.png
 ---
 height: 0px
 ---
 Damage assessment in the Gaza Strip utilizing SAR imagery to evaluate the extent of destruction The damage map above is based on preliminary estimates and have not been verified through field survey or satellite imagery. It does not reflect the final estimations by the World Bank. Country borders or names do not necessarily reflect the World Bank Group's official position. This map is for illustrative purposes and does not imply the expression of any opinion on the part of the World Bank, concerning the legal status of any country or territory or concerning the delimitation of frontiers or boundaries.
+```
+
+```{note}
+The results shown in this analysis only reflect the damages until **Febraury 2, 2024**. As the team completes further analysis, the notebook will be updated. 
 ```
 
 ## Data
