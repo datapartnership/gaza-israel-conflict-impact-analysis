@@ -79,7 +79,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="Impact on Housing and Community" href="housing-and-community.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Feb 06, 2024"/>
+    <meta name="docbuild:last-update" content="Feb 07, 2024"/>
   </head>
   
   
@@ -428,6 +428,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-places-with-economic-activity-damaged">Percentage of places with economic activity damaged</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-buildings-without-electricity">Percentage of buildings without electricity</a></li>
 </ul>
             </nav>
         </div>
@@ -443,7 +444,7 @@ document.write(`
 <h1>Impact on Industry and Commerce<a class="headerlink" href="#impact-on-industry-and-commerce" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
 <li><p>Percentage of commercial and industrial buildings damaged</p></li>
-<li><p>Percentage of commercial and industrial buildings without Night Time Lights</p></li>
+<li><p>Percentage of commercial and industrial buildings without electricity</p></li>
 <li><p>Percentage of places of economic activity damaged</p></li>
 </ul>
 <div class="cell tag_hide-input docutils container">
@@ -454,11 +455,16 @@ document.write(`
 </summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: Percentage of Damaged Industrial and Commercial Buildings as of February 2nd 2024&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.03</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.56</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Gaza: Percentage of Damaged Industrial and Commercial Buildings as of February 2nd 2024&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="mf">1.03</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="mf">0.56</span><span class="p">,</span>
+<span class="p">)</span>
 
-<span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s2">&quot;perc&quot;</span><span class="p">,</span> <span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">)[</span>
-    <span class="p">[</span><span class="s2">&quot;industrial&quot;</span><span class="p">,</span> <span class="s2">&quot;commercial&quot;</span><span class="p">]</span>
-<span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;barh&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s2">&quot;perc&quot;</span><span class="p">,</span> <span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">)[[</span><span class="s2">&quot;industrial&quot;</span><span class="p">,</span> <span class="s2">&quot;commercial&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;barh&quot;</span>
+<span class="p">)</span>
 
 <span class="c1"># Add labels and customization</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;% Buildings Damaged&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
@@ -497,7 +503,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/63b38653683a06c3535476835442c37b8c7fb780511e58a0c63b8ea90086dfb4.svg" src="../../_images/63b38653683a06c3535476835442c37b8c7fb780511e58a0c63b8ea90086dfb4.svg" /></div>
+<img alt="../../_images/d6b9238b742fbbd7cac1bd25db7436a4a8d612343dd44417b9722a6dda05b79c.svg" src="../../_images/d6b9238b742fbbd7cac1bd25db7436a4a8d612343dd44417b9722a6dda05b79c.svg" /></div>
 </div>
 <section id="percentage-of-places-with-economic-activity-damaged">
 <h2>Percentage of places with economic activity damaged<a class="headerlink" href="#percentage-of-places-with-economic-activity-damaged" title="Permalink to this heading">#</a></h2>
@@ -511,9 +517,9 @@ document.write(`
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Gaza: Percentage of Damaged Points of Interest&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.01</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 
-<span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s2">&quot;perc&quot;</span><span class="p">,</span> <span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">)[[</span><span class="s1">&#39;Places of Economic Activity&#39;</span><span class="p">,</span> <span class="s1">&#39;Critical Infrastructure&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
-    <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;barh&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">TableauMedium_10</span><span class="o">.</span><span class="n">mpl_colors</span>
-<span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="s2">&quot;perc&quot;</span><span class="p">,</span> <span class="s2">&quot;ADM2_EN&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">)[</span>
+    <span class="p">[</span><span class="s2">&quot;Places of Economic Activity&quot;</span><span class="p">,</span> <span class="s2">&quot;Critical Infrastructure&quot;</span><span class="p">]</span>
+<span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;barh&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">TableauMedium_10</span><span class="o">.</span><span class="n">mpl_colors</span><span class="p">)</span>
 
 <span class="c1"># Add labels and customization</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;% Damaged Points of Interest&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
@@ -549,7 +555,19 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/e1ab9ce2a747acfc10d03126e543d9d4ecceb2adc0eaa8ba205acc2605ed3c68.svg" src="../../_images/e1ab9ce2a747acfc10d03126e543d9d4ecceb2adc0eaa8ba205acc2605ed3c68.svg" /></div>
+<img alt="../../_images/e5cc10fe306e4778ea1d76b6bb6f7d343e8e43f395fc3e93a99aba5def858ecd.svg" src="../../_images/e5cc10fe306e4778ea1d76b6bb6f7d343e8e43f395fc3e93a99aba5def858ecd.svg" /></div>
+</div>
+</section>
+<section id="percentage-of-buildings-without-electricity">
+<h2>Percentage of buildings without electricity<a class="headerlink" href="#percentage-of-buildings-without-electricity" title="Permalink to this heading">#</a></h2>
+<p>Lower nighttime lights intensity indicative of darker areas may correspond to higher numbers of residential buildings without electricity. The chart below shows the percentage of residential buildings retrieved from <a class="reference external" href="https://www.hotosm.org">OpenStreetMap</a> for which the nighttime lights intensity has decreased as of December 2023 by at least 95% compared to September 2023 for each governorate in Gaza.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="../../_images/8df78dab4fb3a177bd83ea24a88bda138b9dbc73a61586fee1f2dc489feffae7.svg" src="../../_images/8df78dab4fb3a177bd83ea24a88bda138b9dbc73a61586fee1f2dc489feffae7.svg" /></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It’s important to be aware of the limitations and potential inaccuracies associated with using OpenStreetMap (OSM) data for analysis. While OSM provides a valuable source of geographic information, it may not always be comprehensive or up-to-date. Additionally, the granularity of OSM data can vary, leading to coarse sample sizes in certain regions. Failure to account for these limitations could result in misleading conclusions or ineffective strategies.</p>
 </div>
 </section>
 </section>
@@ -619,6 +637,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-places-with-economic-activity-damaged">Percentage of places with economic activity damaged</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#percentage-of-buildings-without-electricity">Percentage of buildings without electricity</a></li>
 </ul>
   </nav></div>
 
@@ -645,7 +664,7 @@ By Development Data Group
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Feb 06, 2024.
+  Last updated on Feb 07, 2024.
   <br/>
 </p>
   </div>
