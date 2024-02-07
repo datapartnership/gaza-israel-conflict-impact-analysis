@@ -73,7 +73,7 @@
     <link rel="canonical" href="https://worldbank.github.io/https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/notebooks/damage-assessment/README.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Baseline Points of Interest and Conflict in the Gaza Strip" href="../conflict/acled.html" />
+    <link rel="next" title="Nighttime Lights Trends" href="../nighttime-lights/README.html" />
     <link rel="prev" title="Datasets and Data Products Summary" href="../../docs/data.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -189,17 +189,13 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Products</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Damage to Buildings and Infrastructure</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../conflict/acled.html">Baseline Points of Interest and Conflict in the Gaza Strip</a></li>
-<li class="toctree-l2"><a class="reference internal" href="damage-assessment.html">Visualizing Damage Buldings and Infrastructure in Gaza</a></li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../nighttime-lights/README.html">Nighttime Lights Trends</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Damage to Buildings and Infrastructure</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../nighttime-lights/README.html">Nighttime Lights Trends</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../nighttime-lights/nighttime-lights.html">Nighttime Lights Trends in Gaza and West Bank</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../nighttime-lights/nighttime-lights-in-jordan.html">Nighttime Lights Trends in Jordan</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../solar-panel-segmentation/README.html">Detection of Solar Panels</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../solar-panel-segmentation/README.html">Detection of Solar Panels</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../solar-panel-segmentation/panel-detection-gaza.html">Run a system through the Panel-Segmentation detection pipeline</a></li>
 </ul>
 </li>
@@ -208,7 +204,6 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../sample-indicators/housing-and-community.html">Impact on Housing and Community</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sample-indicators/industry-and-commerce.html">Impact on Industry and Commerce</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../sample-indicators/health.html">Impact on Health</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Acknowledgements</span></p>
 <ul class="nav bd-sidenav">
@@ -448,6 +443,25 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="damage-to-buildings-and-infrastructure">
 <h1>Damage to Buildings and Infrastructure<a class="headerlink" href="#damage-to-buildings-and-infrastructure" title="Permalink to this heading">#</a></h1>
 <p>The situation in Gaza-Israel has escalated since October 2023. To allow World Bank Staff to estimate the damage undertaken to buildings and points of interest, the Data Lab team conducted a damage assessment using satellite Interferometric Synthetic Aperture Radar (InSAR) imagery.</p>
+<p>You can now interact with this map by selecting/deselecting different damage layers to visualize where buildings are most impacted in the Gaza Strip. Upon visual inspection, you can see:</p>
+<ol class="arabic simple">
+<li><p><strong>Damage:</strong> You can select and deselect the layers to see damages to roads, buildings and points of interest. The damage value ranges from <span class="math notranslate nohighlight">\([0,1]\)</span>, with <span class="math notranslate nohighlight">\(1\)</span> indicating higher level of damage.</p></li>
+<li><p><strong>Conflict:</strong> You can select this layer to view areas wit reported events and fatalities.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The results shown in this analysis only reflect the damages until <strong>Febraury 2, 2024</strong>. As the team completes further analysis, the notebook will be updated.</p>
+</div>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../../_images/logo.png"><img alt="../../_images/logo.png" src="../../_images/logo.png" style="height: 0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Damage assessment in the Gaza Strip utilizing SAR imagery to evaluate the extent of destruction The damage map above is based on preliminary estimates and have not been verified through field survey or satellite imagery. It does not reflect the final estimations by the World Bank. Country borders or names do not necessarily reflect the World Bank Group’s official position. This map is for illustrative purposes and does not imply the expression of any opinion on the part of the World Bank, concerning the legal status of any country or territory or concerning the delimitation of frontiers or boundaries.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The results shown in this analysis only reflect the damages until <strong>Febraury 2, 2024</strong>. As the team completes further analysis, the notebook will be updated.</p>
+</div>
 <section id="data">
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h2>
 <p>The baseline data used for this analysis is as follows. These data act as an input to damage assessment, or add another layer of information to estimate the impact of damage to infrastructure and people of Gaza.</p>
@@ -467,10 +481,10 @@ document.write(`
 <h3>1. Image similarity computation<a class="headerlink" href="#image-similarity-computation" title="Permalink to this heading">#</a></h3>
 <p>This similarity measurement, namely interferometric coherence ranging from <span class="math notranslate nohighlight">\([0,1]\)</span>, provides values of high similarity (usually higher than <span class="math notranslate nohighlight">\(0.6\)</span>) over structures on that had not suffered almost any variation, as for example buildings or man-made structures, while exhibits lower values (usually lower than <span class="math notranslate nohighlight">\(0.4\)</span>) over forest and agricultural areas (especially on large time separation between the acquisition time of the satellite data) over water (usually lower than <span class="math notranslate nohighlight">\(0.3\)</span>) bodies already between consecutive acquisitions.</p>
 <p>We have employed all the Copernicus <a class="reference external" href="https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1/overview">Sentinel-1</a> data acquired over the Gaza strip, which consists in 3 satellite orbits, namely ascending orbit 87 and 160 and descending orbit 94, and we computed all the similarity maps with respect to the first image available for each of the orbits acquired in September 2022 to have time series measurements that will allow us to use a statistical approach to determine changes using anomaly detection method. Each orbit has 12 days repeat pass, so new updated products can be added regularly every 12 days.</p>
-<figure class="align-default" id="id5">
+<figure class="align-default" id="id6">
 <img alt="../../_images/damage-assessment-calendar.png" src="../../_images/damage-assessment-calendar.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Calendar with Copernicus Sentinel-1 acquisition dates after the war started on past 7th October 2023 until 9th January 2023.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Calendar with Copernicus Sentinel-1 acquisition dates after the war started on past 7th October 2023 until 9th January 2023.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -478,10 +492,10 @@ document.write(`
 <h3>2. Change detection based on time series statistics<a class="headerlink" href="#change-detection-based-on-time-series-statistics" title="Permalink to this heading">#</a></h3>
 <p>For the time series change detection, we have computed all the data pre-war September 2022 until end September 2023 to compute the statistics in non-war situation, and to use those statistics to classify the newer data acquired during the war period October 2023 until the present time with pixels for which had been detected a change (potentially attributable to war damage) using anomaly detection method with different thresholds (i.e. 3 sigma rule and 2.5 sigma rule).</p>
 <p>The 3-sigma rule is more conservative and provides more conservative results with false alarms regarding the change detections. 3-sigma rule considers as anomaly values that are lower than the average minus 3 times their standard deviation which it means that are lower than the 99.6% of the value’s normal distribution (measured in non-war conditions) or are included in the 0.15% of possible values, and hence, detected as anomalous. Similarly happens for the 2.5 sigma rule, which pixels are considered as anomaly the ones being the 0.65%. This 2.5 sigma rule may increase some more false alarms, while the 3 sigma rule is considered more conservative anomaly detection rule. See example of this empirical rule below.</p>
-<figure class="align-default" id="id6">
+<figure class="align-default" id="id7">
 <a class="reference internal image-reference" href="../../_images/damage-assessment-empirical-rule.jpg"><img alt="../../_images/damage-assessment-empirical-rule.jpg" src="../../_images/damage-assessment-empirical-rule.jpg" style="width: 300.0px; height: 276.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Illustration of the empirical rule</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Illustration of the empirical rule</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -548,8 +562,6 @@ ACLED is a crowdsourced dataset and is higly likely that the numbers are underre
 </dl>
 </div>
 </section>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -592,11 +604,11 @@ ACLED is a crowdsourced dataset and is higly likely that the numbers are underre
       </div>
     </a>
     <a class="right-next"
-       href="../conflict/acled.html"
+       href="../nighttime-lights/README.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Baseline Points of Interest and Conflict in the Gaza Strip</p>
+        <p class="prev-next-title">Nighttime Lights Trends</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
