@@ -23,7 +23,6 @@ parts:
     chapters:
       - file: notebooks/sample-indicators/housing-and-community.ipynb
       - file: notebooks/sample-indicators/industry-and-commerce.ipynb
-      - file: notebooks/sample-indicators/health.ipynb
   - caption: Acknowledgements
     chapters:
       - file: docs/team
