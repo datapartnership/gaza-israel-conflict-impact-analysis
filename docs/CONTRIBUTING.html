@@ -424,6 +424,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-of-conduct">Code of Conduct</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-can-i-contribute">How Can I Contribute?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-to-the-code-and-documentation">Contributing to the Code and Documentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning-the-repository-locally">Cloning the Repository Locally</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#running-notebooks-locally">Running Notebooks Locally</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-documentation-locally">Building Documentation Locally</a></li>
 </ul>
@@ -454,9 +455,9 @@ document.write(`
 <ul class="simple">
 <li><p><strong>🐞 Bug Reports:</strong> If you encounter a bug or unexpected behavior, please open an issue on GitHub. Be sure to include as much detail as possible to help us identify and fix the problem.</p></li>
 <li><p><strong>✨ Feature Requests</strong>: If you have an idea for a new feature or enhancement, please open an issue on GitHub. Describe the feature and its use case in detail.</p></li>
+<li><p><strong>📣 Community Engagement:</strong> Ask questions, help other contributors and engage with the community on our <a class="reference external" href="https://github.com/orgs/worldbank/discussions">Discussions</a>.</p></li>
+<li><p><strong>📖 Documentation Feedback:</strong> If you find any errors or have suggestions for improving our documentation, you can report the isse on GitHub.</p></li>
 <li><p><strong>🏗️ Pull Requests (PR):</strong> If you’d like to contribute code or documentation changes, we encourage you to submit a <a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">pull request</a>.</p></li>
-<li><p><strong>📖 Documentation:</strong> If you find any errors or have suggestions for improving our documentation, you can submit changes directly through a <a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests">pull request</a>.</p></li>
-<li><p><strong>📣 Community Engagement:</strong> Pose questions, help othe contributors and engage with the community on our <a class="reference external" href="https://github.com/orgs/worldbank/discussions">Discussions</a>.</p></li>
 </ul>
 </section>
 <section id="contributing-to-the-code-and-documentation">
@@ -471,6 +472,15 @@ document.write(`
 <li><p><strong><a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">Create a Pull Request</a>:</strong> Open a pull request against the main branch of this repository. Provide a clear description of your changes and reference any relevant issues. Your PR will be reviewed by maintainers.</p></li>
 <li><p><strong><a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review">Review and Iterate</a>:</strong> Expect feedback and be prepared to make additional changes if necessary. We may request changes, and once everything looks good, your PR will be merged.</p></li>
 </ol>
+<section id="cloning-the-repository-locally">
+<h3>Cloning the Repository Locally<a class="headerlink" href="#cloning-the-repository-locally" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">Cloning</a>, in the context of version control systems like <a class="reference external" href="https://git-scm.com">Git</a>, refers to the process of creating a copy of a repository from a remote location (such as a <a class="reference external" href="https://github.com">GitHub</a> repository) onto your local machine. When you clone a repository, you replicate all of its files, folders, commit history, and branches onto your local system. This allows you to work on the project’s codebase locally, make changes, create new branches, and contribute to the project without affecting the original repository.</p>
+<p>To clone a repository, you’ll need the repository’s URL and a Git client installed on your computer. First, open your Git client of choice, such as GitHub Desktop, GitKraken, or SourceTree. Then, locate the option to clone a repository. In most Git clients, this option is typically found under the “File” or “Repository” menu. Next, paste the URL of the repository you want to clone into the designated field. This URL can usually be found on the repository’s GitHub page by clicking the green “Code” button and copying the URL provided. Once you’ve pasted the URL, choose the local directory where you want to save the cloned repository on your computer. Finally, initiate the cloning process by clicking the “Clone” or “Clone the repo!” button. The Git client will then download a copy of the repository to your local machine, allowing you to work on the files locally and collaborate with others on the project.</p>
+<p>Alternatively, with you’re using <a class="reference external" href="https://git-scm.com/downloads">Git CLI</a>, please follow the step below:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/PATH-TO/REPOSITORY
+</pre></div>
+</div>
+</section>
 <section id="running-notebooks-locally">
 <h3>Running Notebooks Locally<a class="headerlink" href="#running-notebooks-locally" title="Permalink to this heading">#</a></h3>
 <p>This repository provides a Conda/Mamba environment configuration to ensure consistent dependencies across different environments. <a class="reference external" href="https://docs.conda.io">Conda</a>/<a class="reference external" href="https://mamba.readthedocs.io">Mamba</a> are prevalent (interoperable) package managers. If haven’t installed either, you may follow the installation instructions on the respective documentation.</p>
@@ -575,6 +585,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-of-conduct">Code of Conduct</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-can-i-contribute">How Can I Contribute?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing-to-the-code-and-documentation">Contributing to the Code and Documentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning-the-repository-locally">Cloning the Repository Locally</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#running-notebooks-locally">Running Notebooks Locally</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#building-documentation-locally">Building Documentation Locally</a></li>
 </ul>
