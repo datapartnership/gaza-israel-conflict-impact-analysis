@@ -63,7 +63,7 @@ To run the notebooks locally, after (1) and (2) above, please follow these steps
   ```
 
   This command will create a new environment based on the specifications provided in the `environment.yml` file.
-  
+
 - [Activate the environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment), run [JupyterLab](https://jupyterlab.readthedocs.io) and execute `notebooks`:
 
   ```shell
