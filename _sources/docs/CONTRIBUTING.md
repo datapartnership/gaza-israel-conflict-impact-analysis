@@ -88,24 +88,6 @@ To build the documentation locally, after (1) and (2) above, please follow these
 
 The generated documentation will be available in the `_build/html` directory. Open the `index.html` file in a web browser to view it.
 
-## Contributing Code
-
-Whether you are novice and expert, your contribution is valuable. If you're contributing code, please follow these guidelines:
-
-1. **Fork the Repository**: Click the "Fork" button on the top-right corner of this repository on GitHub. This will create a copy of the project in your GitHub account.
-
-2. **Create a Branch:** Create a new branch for your feature or bug fix. Use a clear and descriptive name for your branch, like `feature/my-new-feature` or `bugfix/issue-123`.
-
-3. **Make Changes:** Make your code changes and ensure they adhere to our coding standards.
-
-4. **Test:** Ensure that your changes do not break existing functionality and add tests for new features or bug fixes.
-
-5. **Commit and Push:** Commit your changes with a clear and concise commit message. Reference any related issues or pull requests in your commit message. Push your branch to your forked repository on GitHub.
-
-6. **Create a Pull Request:** Open a pull request against the main branch of this repository. Provide a clear description of your changes and reference any relevant issues. Your PR will be reviewed by maintainers.
-
-7. **Review and Iterate:** Expect feedback and be prepared to make additional changes if necessary. We may request changes, and once everything looks good, your PR will be merged.
-
 ## Licensing
 
 By contributing to this project, you agree that your contributions will be licensed under the project's [LICENSE](LICENSE).
