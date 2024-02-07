@@ -1014,7 +1014,9 @@ document.write(`
 </summary>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">JO_2</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="n">VNP46A2</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;NAME_2&quot;</span><span class="p">],</span> <span class="n">values</span><span class="o">=</span><span class="p">[</span><span class="n">VAR</span><span class="p">])</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s2">&quot;W&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+    <span class="n">VNP46A2</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;NAME_2&quot;</span><span class="p">],</span> <span class="n">values</span><span class="o">=</span><span class="p">[</span><span class="n">VAR</span><span class="p">])</span>
+    <span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s2">&quot;W&quot;</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="p">)</span>
 
 <span class="n">JO_1</span> <span class="o">=</span> <span class="p">(</span>
@@ -1273,7 +1275,7 @@ document.write(`
 <span class="p">)</span>
 <span class="n">p</span><span class="o">.</span><span class="n">add_layout</span><span class="p">(</span>
     <span class="n">Title</span><span class="p">(</span>
-        <span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Weekly Adm2 Radiance Average&quot;</span><span class="p">,</span>
+        <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Weekly Adm2 Radiance Average&quot;</span><span class="p">,</span>
         <span class="n">text_font_size</span><span class="o">=</span><span class="s2">&quot;12pt&quot;</span><span class="p">,</span>
         <span class="n">text_font_style</span><span class="o">=</span><span class="s2">&quot;italic&quot;</span><span class="p">,</span>
     <span class="p">),</span>
@@ -2791,7 +2793,7 @@ if (force === true) {
 <span class="n">p</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">major_label_orientation</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">4</span>
 <span class="n">p</span><span class="o">.</span><span class="n">add_layout</span><span class="p">(</span>
     <span class="n">Title</span><span class="p">(</span>
-        <span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Percent change (compared to 2022) in NTL radiance for each second-level administrative division&quot;</span><span class="p">,</span>
+        <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Percent change (compared to 2022) in NTL radiance for each second-level administrative division&quot;</span><span class="p">,</span>
         <span class="n">text_font_size</span><span class="o">=</span><span class="s2">&quot;12pt&quot;</span><span class="p">,</span>
         <span class="n">text_font_style</span><span class="o">=</span><span class="s2">&quot;italic&quot;</span><span class="p">,</span>
     <span class="p">),</span>
@@ -2907,7 +2909,7 @@ if (force === true) {
 <span class="n">p</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">major_label_orientation</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">4</span>
 <span class="n">p</span><span class="o">.</span><span class="n">add_layout</span><span class="p">(</span>
     <span class="n">Title</span><span class="p">(</span>
-        <span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Percent change week over week in NTL radiance for each second-level administrative division&quot;</span><span class="p">,</span>
+        <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Percent change week over week in NTL radiance for each second-level administrative division&quot;</span><span class="p">,</span>
         <span class="n">text_font_size</span><span class="o">=</span><span class="s2">&quot;12pt&quot;</span><span class="p">,</span>
         <span class="n">text_font_style</span><span class="o">=</span><span class="s2">&quot;italic&quot;</span><span class="p">,</span>
     <span class="p">),</span>

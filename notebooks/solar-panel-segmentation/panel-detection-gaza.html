@@ -431,7 +431,6 @@ document.write(`
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">tensorflow.keras.preprocessing</span> <span class="kn">import</span> <span class="n">image</span> <span class="k">as</span> <span class="n">imagex</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">os</span>
 </pre></div>
 </div>
 </div>
@@ -439,7 +438,7 @@ document.write(`
 <p>Use a set of latitude-longitude coordinates for an NREL site.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Example latitude-longitude coordinates to run the analysis on.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example latitude-longitude coordinates to run the analysis on.</span>
 <span class="c1"># latitude = 39.7407</span>
 <span class="c1"># longitude = -105.1694</span>
 <span class="n">latitude</span> <span class="o">=</span> <span class="mf">31.533796</span>
@@ -453,7 +452,7 @@ document.write(`
 <p>Create an instance of the PanelDetection class and generate a satellite image of the site at the lat-long coordinates.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#CREATE AN INSTANCE OF THE PANELDETECTION CLASS TO RUN THE ANALYSIS</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># CREATE AN INSTANCE OF THE PANELDETECTION CLASS TO RUN THE ANALYSIS</span>
 <span class="n">panelseg</span> <span class="o">=</span> <span class="n">pseg</span><span class="o">.</span><span class="n">PanelDetection</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -461,12 +460,12 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#GENERATE A SATELLITE IMAGE USING THE ASSOCIATED LAT-LONG COORDS AND THE GOOGLE</span>
-<span class="c1">#MAPS API KEY</span>
-<span class="n">img</span> <span class="o">=</span> <span class="n">panelseg</span><span class="o">.</span><span class="n">generateSatelliteImage</span><span class="p">(</span><span class="n">latitude</span><span class="p">,</span> <span class="n">longitude</span><span class="p">,</span>
-                                      <span class="n">file_name_save</span><span class="p">,</span>
-                                      <span class="n">google_maps_api_key</span><span class="p">)</span>
-<span class="c1">#Show the generated satellite image</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># GENERATE A SATELLITE IMAGE USING THE ASSOCIATED LAT-LONG COORDS AND THE GOOGLE</span>
+<span class="c1"># MAPS API KEY</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">panelseg</span><span class="o">.</span><span class="n">generateSatelliteImage</span><span class="p">(</span>
+    <span class="n">latitude</span><span class="p">,</span> <span class="n">longitude</span><span class="p">,</span> <span class="n">file_name_save</span><span class="p">,</span> <span class="n">google_maps_api_key</span>
+<span class="p">)</span>
+<span class="c1"># Show the generated satellite image</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -475,9 +474,11 @@ document.write(`
 <p>Load in the image and declare it as a numpy array.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">imagex</span><span class="o">.</span><span class="n">load_img</span><span class="p">(</span><span class="s2">&quot;./panel_segmentation/examples/Panel_Detection_Examples/sat_img_ex.png&quot;</span><span class="p">,</span> 
-                        <span class="n">color_mode</span><span class="o">=</span><span class="s1">&#39;rgb&#39;</span><span class="p">,</span> 
-                        <span class="n">target_size</span><span class="o">=</span><span class="p">(</span><span class="mi">640</span><span class="p">,</span><span class="mi">640</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">imagex</span><span class="o">.</span><span class="n">load_img</span><span class="p">(</span>
+    <span class="s2">&quot;./panel_segmentation/examples/Panel_Detection_Examples/sat_img_ex.png&quot;</span><span class="p">,</span>
+    <span class="n">color_mode</span><span class="o">=</span><span class="s2">&quot;rgb&quot;</span><span class="p">,</span>
+    <span class="n">target_size</span><span class="o">=</span><span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">640</span><span class="p">),</span>
+<span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
@@ -504,8 +505,10 @@ document.write(`
 <p>Classify the image by mounting configuration, using the mounting configuration object detection algorithm.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">scores</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">boxes</span><span class="p">)</span> <span class="o">=</span> <span class="n">panelseg</span><span class="o">.</span><span class="n">classifyMountingConfiguration</span><span class="p">(</span><span class="n">image_file_path</span> <span class="o">=</span> <span class="s2">&quot;./panel_segmentation/examples/Panel_Detection_Examples/sat_img_ex.png&quot;</span><span class="p">,</span>
-                                                                   <span class="n">acc_cutoff</span> <span class="o">=</span> <span class="mf">.65</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">scores</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">boxes</span><span class="p">)</span> <span class="o">=</span> <span class="n">panelseg</span><span class="o">.</span><span class="n">classifyMountingConfiguration</span><span class="p">(</span>
+    <span class="n">image_file_path</span><span class="o">=</span><span class="s2">&quot;./panel_segmentation/examples/Panel_Detection_Examples/sat_img_ex.png&quot;</span><span class="p">,</span>
+    <span class="n">acc_cutoff</span><span class="o">=</span><span class="mf">0.65</span><span class="p">,</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -517,7 +520,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
-<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+
 <span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">file_name_save</span><span class="p">)</span>
 
 <span class="n">t_boxes</span> <span class="o">=</span> <span class="n">boxes</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
@@ -525,29 +528,29 @@ document.write(`
 <span class="k">for</span> <span class="n">box</span> <span class="ow">in</span> <span class="n">t_boxes</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">box</span><span class="p">)</span>
     <span class="n">x_min</span><span class="p">,</span> <span class="n">y_min</span><span class="p">,</span> <span class="n">x_max</span><span class="p">,</span> <span class="n">y_max</span> <span class="o">=</span> <span class="n">box</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">x_min</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x_min</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
         <span class="n">x_min</span> <span class="o">=</span> <span class="n">x_min</span> <span class="o">-</span> <span class="mi">20</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">x_min</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">y_min</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">y_min</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
         <span class="n">y_min</span> <span class="o">=</span> <span class="n">y_min</span> <span class="o">-</span> <span class="mi">20</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">y_min</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">x_max</span> <span class="o">&lt;</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">20</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x_max</span> <span class="o">&lt;</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">20</span><span class="p">:</span>
         <span class="n">x_max</span> <span class="o">=</span> <span class="n">x_max</span> <span class="o">+</span> <span class="mi">20</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">x_max</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">y_max</span> <span class="o">&lt;</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">20</span><span class="p">):</span>
+        <span class="n">x_max</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">y_max</span> <span class="o">&lt;</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">20</span><span class="p">:</span>
         <span class="n">y_max</span> <span class="o">=</span> <span class="n">y_max</span> <span class="o">+</span> <span class="mi">20</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">y_max</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span>
-        
+        <span class="n">y_max</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span>
+
     <span class="nb">print</span><span class="p">(</span><span class="n">x_min</span><span class="p">,</span> <span class="n">x_max</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">y_min</span><span class="p">,</span> <span class="n">y_max</span><span class="p">)</span>
     <span class="n">mask</span><span class="p">[</span><span class="n">y_min</span><span class="p">:</span><span class="n">y_max</span><span class="p">,</span> <span class="n">x_min</span><span class="p">:</span><span class="n">x_max</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>
 
 
-<span class="n">masked_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">image</span><span class="p">,</span><span class="n">image</span><span class="p">,</span><span class="n">mask</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span>
+<span class="n">masked_img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span>
 <span class="c1"># gray_img = cv2.cvtColor(masked_img, cv2.COLOR_BGR2GRAY)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">masked_img</span><span class="p">)</span>
 </pre></div>
@@ -569,8 +572,8 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hsv</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">masked_img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2HSV</span><span class="p">)</span>
 
-<span class="n">lower_color</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">80</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">80</span><span class="p">])</span>
-<span class="n">upper_color</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">150</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">200</span><span class="p">])</span>
+<span class="n">lower_color</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">80</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">80</span><span class="p">])</span>
+<span class="n">upper_color</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">150</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">200</span><span class="p">])</span>
 <span class="n">hsv_mask</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">inRange</span><span class="p">(</span><span class="n">hsv</span><span class="p">,</span> <span class="n">lower_color</span><span class="p">,</span> <span class="n">upper_color</span><span class="p">)</span>
 
 <span class="c1"># Bitwise-and the mask with the original image</span>
@@ -592,7 +595,7 @@ document.write(`
 <span class="n">contours</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">findContours</span><span class="p">(</span><span class="n">hsv_mask</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">RETR_EXTERNAL</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">CHAIN_APPROX_SIMPLE</span><span class="p">)</span>
 
 <span class="c1"># Find the largest contour</span>
-<span class="n">largest_contour</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">contours</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">contourArea</span><span class="p">)</span>
+<span class="n">largest_contour</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">contours</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">contourArea</span><span class="p">)</span>
 
 <span class="c1"># Approximation accuracy</span>
 <span class="n">epsilon</span> <span class="o">=</span> <span class="mf">0.01</span> <span class="o">*</span> <span class="n">cv2</span><span class="o">.</span><span class="n">arcLength</span><span class="p">(</span><span class="n">largest_contour</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
