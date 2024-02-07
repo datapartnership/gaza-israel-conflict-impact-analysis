@@ -9,9 +9,6 @@ parts:
   - caption: Data Products
     chapters:
       - file: notebooks/damage-assessment/README
-        sections:
-          - file: notebooks/conflict/acled.ipynb
-          - file: notebooks/damage-assessment/damage-assessment.ipynb
       - file: notebooks/nighttime-lights/README
         sections:
           - file: notebooks/nighttime-lights/nighttime-lights.ipynb
@@ -23,7 +20,6 @@ parts:
     chapters:
       - file: notebooks/sample-indicators/housing-and-community.ipynb
       - file: notebooks/sample-indicators/industry-and-commerce.ipynb
-      - file: notebooks/sample-indicators/health.ipynb
   - caption: Acknowledgements
     chapters:
       - file: docs/team
