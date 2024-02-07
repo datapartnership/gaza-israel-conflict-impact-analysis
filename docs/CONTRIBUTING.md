@@ -14,11 +14,11 @@ There are several ways you can contribute to this project:
 
 - **✨ Feature Requests**: If you have an idea for a new feature or enhancement, please open an issue on GitHub. Describe the feature and its use case in detail.
 
+- **📣 Community Engagement:** Ask questions, help other contributors and engage with the community on our [Discussions](https://github.com/orgs/worldbank/discussions).
+
+- **📖 Documentation Feedback:** If you find any errors or have suggestions for improving our documentation, you can report the isse on GitHub.
+
 - **🏗️ Pull Requests (PR):** If you'd like to contribute code or documentation changes, we encourage you to submit a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
-
-- **📖 Documentation:** If you find any errors or have suggestions for improving our documentation, you can submit changes directly through a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
-
-- **📣 Community Engagement:** Pose questions, help othe contributors and engage with the community on our [Discussions](https://github.com/orgs/worldbank/discussions).
 
 ## Contributing to the Code and Documentation
 
@@ -37,6 +37,18 @@ Whether you are novice and expert, your contribution is valuable. If you're cont
 6. **[Create a Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request):** Open a pull request against the main branch of this repository. Provide a clear description of your changes and reference any relevant issues. Your PR will be reviewed by maintainers.
 
 7. **[Review and Iterate](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review):** Expect feedback and be prepared to make additional changes if necessary. We may request changes, and once everything looks good, your PR will be merged.
+
+### Cloning the Repository Locally
+
+[Cloning](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository), in the context of version control systems like [Git](https://git-scm.com), refers to the process of creating a copy of a repository from a remote location (such as a [GitHub](https://github.com) repository) onto your local machine. When you clone a repository, you replicate all of its files, folders, commit history, and branches onto your local system. This allows you to work on the project's codebase locally, make changes, create new branches, and contribute to the project without affecting the original repository.
+
+To clone a repository, you'll need the repository's URL and a Git client installed on your computer. First, open your [Git](https://git-scm.com) client of choice, such as [GitHub Desktop](https://desktop.github.com) or [GitKraken](https://www.gitkraken.com). Then, locate the option to clone a repository. In most [Git](https://git-scm.com) clients, this option is typically found under the "File" or "Repository" menu. Next, paste the URL of the repository you want to clone into the designated field. This URL can usually be found on the repository's [GitHub](https://github.com) page by clicking the green "Code" button and copying the URL provided. Once you've pasted the URL, choose the local directory where you want to save the cloned repository on your computer. Finally, initiate the cloning process by clicking the "Clone" button. The [Git](https://git-scm.com) client will then download a copy of the repository to your local machine, allowing you to work on the files locally and collaborate with others on the project.
+
+Alternatively, with you're using [Git CLI](https://git-scm.com/downloads), please follow the step below:
+
+  ```shell
+  git clone https://github.com/PATH-TO/REPOSITORY
+  ```
 
 ### Running Notebooks Locally
 
@@ -75,24 +87,6 @@ To build the documentation locally, after (1) and (2) above, please follow these
   ```
 
 The generated documentation will be available in the `_build/html` directory. Open the `index.html` file in a web browser to view it.
-
-## Contributing Code
-
-Whether you are novice and expert, your contribution is valuable. If you're contributing code, please follow these guidelines:
-
-1. **Fork the Repository**: Click the "Fork" button on the top-right corner of this repository on GitHub. This will create a copy of the project in your GitHub account.
-
-2. **Create a Branch:** Create a new branch for your feature or bug fix. Use a clear and descriptive name for your branch, like `feature/my-new-feature` or `bugfix/issue-123`.
-
-3. **Make Changes:** Make your code changes and ensure they adhere to our coding standards.
-
-4. **Test:** Ensure that your changes do not break existing functionality and add tests for new features or bug fixes.
-
-5. **Commit and Push:** Commit your changes with a clear and concise commit message. Reference any related issues or pull requests in your commit message. Push your branch to your forked repository on GitHub.
-
-6. **Create a Pull Request:** Open a pull request against the main branch of this repository. Provide a clear description of your changes and reference any relevant issues. Your PR will be reviewed by maintainers.
-
-7. **Review and Iterate:** Expect feedback and be prepared to make additional changes if necessary. We may request changes, and once everything looks good, your PR will be merged.
 
 ## Licensing
 
