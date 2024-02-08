@@ -2,6 +2,12 @@
 
 ## Estimated Damage Heatmap
 
+```{figure} heatmap-20240202.png
+---
+---
+Heatmap depicting estimated damage inflicted to buildings until February 2, 2024 in the Gaza Strip utilizing SAR imagery to evaluate the extent and geographical distribution of estimated destruction. Brighter regions indicate higher levels of damage, denoting the intensity of estimated damage on scale from 0 to 1, from white to red, where 1 signifies total damage. An interactive map is available at https://datapartnership.org/gaza-israel-conflict-impact-analysis.
+```
+
 ## Estimated Density and Intentisy of Damage to Buildings
 
 ```{figure} buildings-20231025_dark.png
