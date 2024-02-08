@@ -1,6 +1,6 @@
-(data)=
-
 # Datasets and Data Products Summary
+
+(data)=
 
 ## Datasets
 
@@ -38,5 +38,5 @@ Following is a summary of Data Products used in this Data Good:
 | ID  | Name                                       | Description                                                         | Limitations                                                                                                                                                                                    | Datasets Used (ID#) |
 | --- | ------------------------------------------ | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
 | A   | Observed changes in NightLight Data        | Weekly aggregated trends in nighttime luminosity                    | Changes in nighttime lights could be driven by multiple factors—such as rescue efforts generating lights, to damages and people leaving high-hit areas causing a reduction in nighttime lights | 1,2                              |
-| B   | Observed Impact of Conflict Events on PoIs | Daily activity of conflict events overlayed with Points of Interest | The Points of Interest are obtained from OSM, which is crowdsourced and does not have a fixed refresh schedule.                                                                                | 1,3,5                            |
+| B   | Observed Impact of Conflict Events on PoIs | Daily activity of conflict events overlaid with Points of Interest | The Points of Interest are obtained from OSM, which is crowdsourced and does not have a fixed refresh schedule.                                                                                | 1,3,5                            |
 | C   | Damage Assessment                          | Assessment of damage to buildings calculated from satellite imagery |                                                                                                                                                                                                |                                  |
