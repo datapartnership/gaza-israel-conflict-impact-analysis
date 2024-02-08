@@ -2,6 +2,10 @@
 
 This Damage Assessment report provides an overview of the current state of infrastructure and buildings damage as of **February 2, 2024**. Utilizing Synthetic Aperture Radar (SAR) imagery and buildings footprints from [OpenStreeMap](https://www.hotosm.org), we have generated the maps below to visualize the extent of damage across affected areas.
 
+```{seealso}
+Additionally, for a more immersive understanding, see also the [interactive map](https://studio.foursquare.com/public/26ba3dfb-0770-4cc6-b6fa-2ee2878580fc).
+```
+
 ## Damage Assessment Heatmap
 
 ```{figure} heatmap-20231029.png
