@@ -12,7 +12,7 @@ Additionally, for a more immersive understanding, see also the [interactive map]
 ---
 height: 500px
 ---
-Heatmap depicting estimated damage inflicted to buildings until **October 29, 2023** in the Gaza Strip utilizing SAR imagery to evaluate the extent and geographical distribution of estimated destruction. Brighter regions indicate higher levels of damage, denoting the intensity of estimated damage on scale from 0 to 1, from white to red, where 1 signifies total damage. Source: OpenStreetMap, Sentinel-1 SAR and https://datapartnership.org/gaza-israel-conflict-impact-analysis.
+Heatmap depicting estimated damage inflicted to buildings until **October 29, 2023** in the Gaza Strip utilizing SAR imagery to evaluate the extent and geographical distribution of estimated destruction. Brighter regions indicate higher levels of damage, denoting the intensity of estimated damage on scale from 0 to 1, from yellow to red, where 1 signifies total damage. Source: OpenStreetMap, Sentinel-1 SAR and https://datapartnership.org/gaza-israel-conflict-impact-analysis.
 ```
 
 ```{figure} heatmap-20240202.png
@@ -27,6 +27,8 @@ The following is a comparative visualization that contrasts the overall estimate
 |Estimated Damage until Oct 29, 2023 | Estimated Damage until Feb 2, 2024|
 |- | -|
 |![]( heatmap-20231029.png) | ![](heatmap-20240202.png)|
+
+> Heatmap depicting estimated damage inflicted to buildings in the Gaza Strip utilizing SAR imagery to evaluate the extent and geographical distribution of estimated destruction. Brighter regions indicate higher levels of damage, denoting the intensity of estimated damage on scale from 0 to 1, from white to red, where 1 signifies total damage.
 
 ## Estimated Density and Intentisy of Damage to Buildings
 
@@ -56,6 +58,8 @@ The following is a comparative visualization that contrasts the overall estimate
 |Estimated Damage until Oct 29, 2023 | Estimated Damage until Feb 2, 2024|
 |- | -|
 |![](buildings-20231025_dark.png) | ![](buildings-20240202_dark.png)|
+
+> Estimated damage inflicted to buildings in the Gaza Strip utilizing SAR imagery to evaluate the extent and geographical distribution of estimated destruction. Each bar represents a region, with height indicating the number of affected buildings and color denoting the intensity of estimated damage on scale from 0 to 1, from yellow to red, where 1 signifies total damage.
 
 ## Estimated Elapsed Days until High Damage
 
