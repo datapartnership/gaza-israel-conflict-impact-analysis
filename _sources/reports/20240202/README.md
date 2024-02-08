@@ -1,4 +1,4 @@
-# Damage Assessment as of February 2, 2024
+# Damage Assessment until February 2, 2024
 
 This Damage Assessment report provides an overview of the current state of infrastructure and buildings damage as of **February 2, 2024**. Utilizing Synthetic Aperture Radar (SAR) imagery and buildings footprints from [OpenStreeMap](https://www.hotosm.org), we have generated the maps below to visualize the extent of damage across affected areas.
 
@@ -46,7 +46,7 @@ Estimated damage inflicted to buildings until **December 16, 2023** in the Gaza 
 Estimated damage inflicted to buildings until **February 2, 2024** in the Gaza Strip utilizing SAR imagery to evaluate the extent and geographical distribution of estimated destruction. Each bar represents a region, with height indicating the number of affected buildings and color denoting the intensity of estimated damage on scale from 0 to 1, from white to red, where 1 signifies total damage. Source: OpenStreetMap, Sentinel-1 SAR and https://datapartnership.org/gaza-israel-conflict-impact-analysis.
 ```
 
-# Estimated Elapsed Days until High Damage
+## Estimated Elapsed Days until High Damage
 
 ```{figure} elapsed-20240202_dark.png
 ---
