@@ -16,7 +16,7 @@ There are several ways you can contribute to this project:
 
 - **📣 Community Engagement:** Ask questions, help other contributors and engage with the community on our [Discussions](https://github.com/orgs/worldbank/discussions).
 
-- **📖 Documentation Feedback:** If you find any errors or have suggestions for improving our documentation, you can report the isse on GitHub.
+- **📖 Documentation Feedback:** If you find any errors or have suggestions for improving our documentation, you can report the issue on GitHub.
 
 - **🏗️ Pull Requests (PR):** If you'd like to contribute code or documentation changes, we encourage you to submit a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 

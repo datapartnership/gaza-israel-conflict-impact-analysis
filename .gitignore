@@ -88,8 +88,6 @@ target/
 # Jupyter Book
 _build/
 
-# python-dotenv
-.env
-
 # Project-specific
+.env
 data/

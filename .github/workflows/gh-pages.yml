@@ -18,6 +18,7 @@ jobs:
       - name: Dependencies
         run: |
           if [ -f docs/requirements.txt ]; then pip install -r docs/requirements.txt; fi
+          if [ -f pyproject.toml ]; then pip install ".[docs]"; fi
       - name: Build Jupyter Book
         run: |
           jupyter-book build . --config docs/_config.yml --toc docs/_toc.yml

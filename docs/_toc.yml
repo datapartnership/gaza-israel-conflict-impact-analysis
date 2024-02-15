@@ -21,8 +21,8 @@ parts:
           - file: notebooks/solar-panel-segmentation/panel-detection-gaza.ipynb
   - caption: Sample Indicators
     chapters:
-      - file: notebooks/sample-indicators/housing-and-community.ipynb
-      - file: notebooks/sample-indicators/industry-and-commerce.ipynb
+      - file: reports/sample-indicators/housing-and-community.ipynb
+      - file: reports/sample-indicators/industry-and-commerce.ipynb
   - caption: Acknowledgements
     chapters:
       - file: docs/team

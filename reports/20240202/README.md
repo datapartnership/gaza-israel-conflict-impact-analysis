@@ -26,7 +26,7 @@ The following is a comparative visualization that contrasts the overall estimate
 
 |Estimated Damage until Oct 29, 2023 | Estimated Damage until Feb 2, 2024|
 |- | -|
-|![]( heatmap-20231029.png) | ![](heatmap-20240202.png)|
+|![heatmap-20231029]( heatmap-20231029.png) | ![(heatmap-20240202](heatmap-20240202.png)|
 
 > Heatmap depicting estimated damage inflicted to buildings in the Gaza Strip utilizing SAR imagery to evaluate the extent and geographical distribution of estimated destruction. Brighter regions indicate higher levels of damage, denoting the intensity of estimated damage on scale from 0 to 1, from white to red, where 1 signifies total damage.
 
@@ -57,7 +57,7 @@ The following is a comparative visualization that contrasts the overall estimate
 
 |Estimated Damage until Oct 29, 2023 | Estimated Damage until Feb 2, 2024|
 |- | -|
-|![](buildings-20231025_dark.png) | ![](buildings-20240202_dark.png)|
+|![buildings-20231025_dark](buildings-20231025_dark.png) | ![buildings-20240202](buildings-20240202_dark.png)|
 
 > Estimated damage inflicted to buildings in the Gaza Strip utilizing SAR imagery to evaluate the extent and geographical distribution of estimated destruction. Each bar represents a region, with height indicating the number of affected buildings and color denoting the intensity of estimated damage on scale from 0 to 1, from yellow to red, where 1 signifies total damage.
 
