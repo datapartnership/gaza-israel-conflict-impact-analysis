@@ -4,7 +4,7 @@
 
 Data Goods packages include:
 
-1. **Foundational Datasets**. Foundational Datasets comprise *all* datasets used to prepare the Data Goods. To support replication and re-use of the Data Goods, the documetation includes a description of each datasource, including data type, update frequency, access links (including to the World Bank's data catalogue, the [Development Data Hub](https://datacatalog.worldbank.org/home)) and contact information.
+1. **Foundational Datasets**. Foundational Datasets comprise *all* datasets used to prepare the Data Goods. To support replication and re-use of the Data Goods, the documentation includes a description of each datasource, including data type, update frequency, access links (including to the World Bank's data catalogue, the [Development Data Hub](https://datacatalog.worldbank.org/home)) and contact information.
 <br><br>
 2. **Data Products**. These are analytical products derived from the Foundational Datasets, which can be further used to generate indicators and insights. All data products include documentation, links to original data sources (and/or information on how to access them), and a description of their limitations. Reference resources are also cited, where relevant. In the documentation, each Data Product has it's own "chapter", generated through use of a Jupyter notebook.
 <br><br>

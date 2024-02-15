@@ -3,6 +3,7 @@
 Analyzing conflict dynamics through the lens of [NASA's Black Marble Nighttime Lights](https://blackmarble.gsfc.nasa.gov) dataset opens a unique window into the often-hidden facets of global unrest. In a world marked by diverse forms of conflict, from armed confrontations to civil unrest, the dataset offers an unconventional yet powerful tool for understanding the ripple effects of these conflicts on human settlements and infrastructure. By tracking nighttime light variations and disruptions, we can unearth vital insights into population displacement, economic destabilization, and the societal impacts of conflict. This analysis explores the potential of the Black Marble Nighttime Lights dataset to not only detect areas affected by conflict but also to quantify the extent of its influence on human lives and livelihoods, providing a valuable perspective on the multifaceted consequences of conflict worldwide.
 
 (nighttime-lights-limitations)=
+
 ## Limitations
 
 Using nighttime lights to estimate macroeconomic indicators during conflict may be a valuable approach, but it comes with several assumptions and limitations. Here's a list of some of the key assumptions and limitations:
