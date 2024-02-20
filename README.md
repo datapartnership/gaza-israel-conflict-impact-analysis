@@ -1,6 +1,8 @@
 # Gaza-Israel Conflict Impact Analysis
 
 [![DOI](https://zenodo.org/badge/707308540.svg)](https://zenodo.org/doi/10.5281/zenodo.10684882)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/datapartnership/gaza-israel-conflict-impact-analysis/main.svg)](https://results.pre-commit.ci/latest/github/datapartnership/gaza-israel-conflict-impact-analysis/main)
+
 
 > Using Alternative Data to Understand Economic Impacts of the Gaza-Israel 2023 Conflict
 
