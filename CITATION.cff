@@ -1,3 +1,5 @@
+cff-version: 1.2.0
+message: "Gaza-Israel 2023 Conflict Impact Analysis"
 title: "Gaza-Israel 2023 Conflict Impact Analysis"
 authors:
   - affiliation: World Bank
@@ -6,16 +8,13 @@ authors:
     orcid: https://orcid.org/0000-0001-6530-3780
   - affiliation: World Bank
     family-names: Delgado Blasco
-    given-names: Jose Manuel
-cff-version: 1.2.0
+    given-names: José Manuel
 keywords:
   - Gaza
   - Copernicus Sentinel
   - NASA Black Marble
   - Nighttime Lights
   - Synthetic Aperture Radar
-license:
-  - mpl-2.0
-repository-code: https://github.com/datapartnership/blackmarblepy/tree/v2024.1.1
+repository-code: https://github.com/datapartnership/blackmarblepy/tree/v2024.1.2
 type: software
-version: v2024.1.1
+version: v2024.1.2
