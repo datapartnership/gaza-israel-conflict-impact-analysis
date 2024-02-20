@@ -8,7 +8,7 @@ description = "Using Alternative Data to Understand Economic Impacts of the 2023
 readme = { file = "README.md", content-type = "text/markdown" }
 license = { file = "LICENSE" }
 keywords = [
-	"sentinel",
+	"copernicus sentinel",
 	"synthetic aperture radar",
 	"nighttime lights",
 	"black marble",
@@ -17,6 +17,7 @@ keywords = [
 authors = [{ name = "World Bank Data Lab", email = "datalab@worldbank.org" }]
 maintainers = [
 	{ name = "Gabriel Stefanini Vicente", email = "gvicente@worldbank.org" },
+	{ name = "José Manuel Delgado Blasco", email = "jdelgadoblasco@worldbank.org" },
 ]
 classifiers = [
 	"Development Status :: 3 - Alpha",
@@ -42,7 +43,7 @@ ignore-regex = '^\s*"image\/png":\s.*'
 ignore-words-list = "gost,"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/gaza-israel-conflict-impact-analysis"]
+packages = ["src/*"]
 
 [tool.hatch.version]
 source = "vcs"
