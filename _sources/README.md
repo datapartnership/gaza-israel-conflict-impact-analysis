@@ -22,4 +22,4 @@ If you have any feedback, encounter issues, or want to suggest improvements, ple
 
 ## License
 
-This projects is licensed under the [**Mozilla Public License**](https://opensource.org/license/mpl-2-0/) - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [**Mozilla Public License**](https://opensource.org/license/mpl-2-0/) - see the [LICENSE](LICENSE) file for details.
