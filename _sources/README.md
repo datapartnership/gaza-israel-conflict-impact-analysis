@@ -1,5 +1,7 @@
 # Gaza-Israel Conflict Impact Analysis
 
+[![DOI](https://zenodo.org/badge/707308540.svg)](https://zenodo.org/doi/10.5281/zenodo.10684882)
+
 > Using Alternative Data to Understand Economic Impacts of the Gaza-Israel 2023 Conflict
 
 The 2023 Gaza-Israel Conflict had profound economic implications that extend beyond conventional measures. This project aims to explore alternative data sources, such as synthetic-aperture radar and nighttime lights, to better comprehend the multifaceted economic impacts on the Gaza Strip. Leveraging alternative data sources can provide a more nuanced understanding of the economic landscape during and after such events, when traditional economic indicators may not fully capture the complex dynamics and localized effects of conflicts.
