@@ -443,7 +443,7 @@ document.write(`
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#point-in-time-comparison">Point-in-Time Comparison</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#daily">Daily</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Weekly</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Weekly</a></li>
 </ul>
 </li>
 </ul>
@@ -657,16 +657,16 @@ document.write(`
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div></div>
 </div>
-<figure class="align-default" id="id6">
+<figure class="align-default" id="id8">
 <a class="reference internal image-reference" href="../../_images/logo.png"><img alt="../../_images/logo.png" src="../../_images/logo.png" style="height: 0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Region of Interest. Country borders or names do not necessarily reflect the World Bank Group’s official position. This map is for illustrative purposes and does not imply the expression of any opinion on the part of the World Bank, conceming the legal status of any country or territory or concerning the delimitation of frontiers or boundaries.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Region of Interest. Country borders or names do not necessarily reflect the World Bank Group’s official position. This map is for illustrative purposes and does not imply the expression of any opinion on the part of the World Bank, conceming the legal status of any country or territory or concerning the delimitation of frontiers or boundaries.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="black-marble">
 <h3>Black Marble<a class="headerlink" href="#black-marble" title="Permalink to this heading">#</a></h3>
-<p><a class="reference external" href="https://blackmarble.gsfc.nasa.gov">NASA’s Black Marble</a> VIIRS (Visible Infrared Imaging Radiometer Suite) Nighttime Lights product suite represents a remarkable advancement in our ability to monitor and understand nocturnal light emissions on a global scale. By utilizing cutting-edge satellite technology and image processing techniques, the Black Marble VIIRS dataset offers a comprehensive and high-resolution view of the Earth’s nighttime illumination patterns.</p>
+<p><a class="reference external" href="https://blackmarble.gsfc.nasa.gov">NASA’s Black Marble</a> product suite represents a remarkable advancement in our ability to monitor and understand nocturnal light emissions on a global scale. By utilizing cutting-edge satellite technology and image processing techniques, the Black Marble VIIRS dataset offers a comprehensive and high-resolution view of the Earth’s nighttime illumination patterns. To obtain the raster data conveniently and calculate zonal statistics, we use the <a class="reference external" href="https://worldbank.github.io/blackmarblepy/README.html">BlackMarblePy</a> <span id="id1">[<a class="reference internal" href="nighttime-lights-in-jordan.html#id5" title="Gabriel Stefanini Vicente and Robert Marty. BlackMarblePy: Georeferenced Rasters and Statistics of Nighttime Lights from NASA Black Marble. February 2024. URL: https://doi.org/10.5281/zenodo.10667925, doi:10.5281/zenodo.10667925.">1</a>]</span> package developed by the World Bank.</p>
 <div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">VNP46A2</span> <span class="o">=</span> <span class="n">bm_extract</span><span class="p">(</span>
@@ -1428,10 +1428,10 @@ if (force === true) {
   }
 })(window);</script></div>
 </div>
-<figure class="align-default" id="id7">
+<figure class="align-default" id="id9">
 <a class="reference internal image-reference" href="../../_images/logo.png"><img alt="../../_images/logo.png" src="../../_images/logo.png" style="height: 0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Monthly NTL radiance average derived from the VNP46A2 daily composite and, in grey, derived from the VNP46A3 monthly composite.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Monthly NTL radiance average derived from the VNP46A2 daily composite and, in grey, derived from the VNP46A3 monthly composite.</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -1945,10 +1945,10 @@ if (force === true) {
   }
 })(window);</script></div>
 </div>
-<figure class="align-default" id="id8">
+<figure class="align-default" id="id10">
 <a class="reference internal image-reference" href="../../_images/logo.png"><img alt="../../_images/logo.png" src="../../_images/logo.png" style="height: 0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Weekly percent change (compared to 2022 benchmark) in NTL radiance (VNP46A2) for each second-level administrative division.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Weekly percent change (compared to 2022 benchmark) in NTL radiance (VNP46A2) for each second-level administrative division.</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Additionally, we visualize below the NTL radiance average on first-level administrative division.</p>
@@ -2006,10 +2006,10 @@ if (force === true) {
   }
 })(window);</script></div>
 </div>
-<figure class="align-default" id="id9">
+<figure class="align-default" id="id11">
 <a class="reference internal image-reference" href="../../_images/logo.png"><img alt="../../_images/logo.png" src="../../_images/logo.png" style="height: 0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Weekly percent change (compared to 2022 benchmark) in NTL radiance (NASA Black Marble VNP46A2) for each first-level administrative division.</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Weekly percent change (compared to 2022 benchmark) in NTL radiance (NASA Black Marble VNP46A2) for each first-level administrative division.</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -2064,21 +2064,21 @@ if (force === true) {
 <h3>Point-in-Time Comparison<a class="headerlink" href="#point-in-time-comparison" title="Permalink to this heading">#</a></h3>
 <section id="daily">
 <h4>Daily<a class="headerlink" href="#daily" title="Permalink to this heading">#</a></h4>
-<figure class="align-default" id="id10">
+<figure class="align-default" id="id12">
 <a class="reference internal image-reference" href="../../_images/pse_ntl_VNP46A1_2023-01-01.png"><img alt="../../_images/pse_ntl_VNP46A1_2023-01-01.png" src="../../_images/pse_ntl_VNP46A1_2023-01-01.png" style="height: 400px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Nighttime lights on January 1, 2023. Source: NASA Black Marble (VNP46A1).</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Nighttime lights on January 1, 2023. Source: NASA Black Marble (VNP46A1).</span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-default" id="id11">
+<figure class="align-default" id="id13">
 <a class="reference internal image-reference" href="../../_images/pse_ntl_VNP46A1_2023-10-21.png"><img alt="../../_images/pse_ntl_VNP46A1_2023-10-21.png" src="../../_images/pse_ntl_VNP46A1_2023-10-21.png" style="height: 400px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Nighttime lights on October 21, 2023. Source: NASA Black Marble (VNP46A1).</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Nighttime lights on October 21, 2023. Source: NASA Black Marble (VNP46A1).</span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id1">
-<h4>Weekly<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h4>
+<section id="id2">
+<h4>Weekly<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h4>
 <p>We visualize below weekly snapshots of the percent change (compared to 2022) in NTL radiance average for each second-level administrative division.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
@@ -2852,11 +2852,14 @@ if (force === true) {
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
-<p><span id="id2"></span></p>
-<div class="docutils container" id="id3">
+<p><span id="id3"></span></p>
+<div class="docutils container" id="id4">
 <dl class="citation">
-<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
 <dd><p>Miguel O. Román, Zhuosen Wang, Qingsong Sun, Virginia Kalb, Steven D. Miller, Andrew Molthan, Lori Schultz, Jordan Bell, Eleanor C. Stokes, Bhartendu Pandey, Karen C. Seto, Dorothy Hall, Tomohiro Oda, Robert E. Wolfe, Gary Lin, Navid Golpayegani, Sadashiva Devadiga, Carol Davidson, Sudipta Sarkar, Cid Praderas, Jeffrey Schmaltz, Ryan Boller, Joshua Stevens, Olga M. Ramos González, Elizabeth Padilla, José Alonso, Yasmín Detrés, Roy Armstrong, Ismael Miranda, Yasmín Conte, Nitza Marrero, Kytt MacManus, Thomas Esch, and Edward J. Masuoka. Nasa's black marble nighttime lights product suite. <em>Remote Sensing of Environment</em>, 210:113–143, 2018. URL: <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S003442571830110X">https://www.sciencedirect.com/science/article/pii/S003442571830110X</a>, <a class="reference external" href="https://doi.org/https://doi.org/10.1016/j.rse.2018.03.017">doi:https://doi.org/10.1016/j.rse.2018.03.017</a>.</p>
+</dd>
+<dt class="label" id="id7"><span class="brackets"><a class="fn-backref" href="#id1">2</a></span></dt>
+<dd><p>Gabriel Stefanini Vicente and Robert Marty. BlackMarblePy: Georeferenced Rasters and Statistics of Nighttime Lights from NASA Black Marble. February 2024. URL: <a class="reference external" href="https://doi.org/10.5281/zenodo.10667925">https://doi.org/10.5281/zenodo.10667925</a>, <a class="reference external" href="https://doi.org/10.5281/zenodo.10667925">doi:10.5281/zenodo.10667925</a>.</p>
 </dd>
 </dl>
 </div>
@@ -2948,7 +2951,7 @@ if (force === true) {
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#point-in-time-comparison">Point-in-Time Comparison</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#daily">Daily</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Weekly</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Weekly</a></li>
 </ul>
 </li>
 </ul>
