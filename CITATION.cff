@@ -1,13 +1,13 @@
+title: "Gaza-Israel 2023 Conflict Impact Analysis"
 authors:
   - affiliation: World Bank
     family-names: Stefanini Vicente
     given-names: Gabriel
-    orcid: 0000-0001-6530-3780
+    orcid: https://orcid.org/0000-0001-6530-3780
   - affiliation: World Bank
     family-names: Delgado Blasco
-    given-names: José Manuel
+    given-names: Jose Manuel
 cff-version: 1.2.0
-date-released: "2024-02-20"
 keywords:
   - Gaza
   - Copernicus Sentinel
@@ -16,7 +16,6 @@ keywords:
   - Synthetic Aperture Radar
 license:
   - mpl-2.0
-repository-code: https://github.com/datapartnership/blackmarblepy/tree/v2024.1.0
-title: "Gaza-Israel 2023 Conflict Impact Analysis"
+repository-code: https://github.com/datapartnership/blackmarblepy/tree/v2024.1.1
 type: software
-version: v2024.1.0
+version: v2024.1.1
