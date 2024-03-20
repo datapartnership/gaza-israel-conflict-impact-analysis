@@ -12,6 +12,7 @@ parts:
         sections:
           - file: notebooks/damage-assessment/damage-assessment.ipynb
           - file: reports/20240202/README
+          - file: reports/20240317/README
       - file: notebooks/nighttime-lights/README
         sections:
           - file: notebooks/nighttime-lights/nighttime-lights.ipynb

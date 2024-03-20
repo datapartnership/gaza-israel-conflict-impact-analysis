@@ -89,7 +89,7 @@ Using OpenStreetMap (OSM) and Interferometric Synthetic Aperture Radar (InSAR) f
     - **Verification Challenges:** Verifying damages solely based on remote sensing data might lack the on-ground verification necessary for a comprehensive understanding of the situation.
 
 - **Conflict Data**
-ACLED is a crowdsourced dataset and is higly likely that the numbers are underreported. ACLED keep changing their data based on local validation.
+ACLED is a crowdsourced dataset and is highly likely that the numbers are underreported. ACLED keep changing their data based on local validation.
 ```
 
 ## References
