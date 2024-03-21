@@ -1,52 +1,47 @@
 [build-system]
-requires = ["hatchling>=1.21.0", "hatch-vcs>=0.3.0"]
-build-backend = "hatchling.build"
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
 
 [project]
-name = "gaza-israel-conflict-impact-analysis"
-description = "Using Alternative Data to Understand Economic Impacts of the 2023 Gaza-Israel Conflict"
+name = "gaza_israel_conflict_analysis"
+dynamic = ["version"]
+description = "An Python package to support the Gaza Israel Conflict Impact Analysis"
 readme = { file = "README.md", content-type = "text/markdown" }
 license = { file = "LICENSE" }
 keywords = [
-	"copernicus sentinel",
-	"synthetic aperture radar",
-	"nighttime lights",
-	"black marble",
 	"world bank",
+	"reproducible research",
+	"conflict monitor",
+	"gaza",
 ]
-authors = [{ name = "World Bank Data Lab", email = "datalab@worldbank.org" }]
+authors = [
+	{ name = "World Bank Development Data Group", email = "datalab@worldbank.org" },
+]
 maintainers = [
 	{ name = "Gabriel Stefanini Vicente", email = "gvicente@worldbank.org" },
-	{ name = "José Manuel Delgado Blasco", email = "jdelgadoblasco@worldbank.org" },
+	{ name = "Sahiti Sarva", email = "ssarva@worldbank.org" },
 ]
 classifiers = [
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.7",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3 :: Only",
 	"Development Status :: 3 - Alpha",
-	"Intended Audience :: Science/Research",
-	"Topic :: Scientific/Engineering",
+	"Intended Audience :: Developers",
+	"Operating System :: OS Independent",
 ]
-requires-python = ">=3.10"
-dynamic = ["version"]
-
+requires-python = ">=3.7"
+dependencies = ["pandas>=2"]
 [project.optional-dependencies]
-docs = [
-	"docutils==0.17.1",     # https://jupyterbook.org/en/stable/content/citations.html?highlight=docutils#citations-and-bibliographies
-	"jupyter-book>=0.15.1",
-]
+notebook = ["notebook>=6.5.2"]
+
 [project.urls]
-"Homepage" = "https://datapartnership.github.io/gaza-israel-conflict-impact-analysis"
+"Homepage" = "https://github.com/datapartnership/gaza-israel-conflict-impact-analysis"
 "Bug Reports" = "https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/issues"
 "Source" = "https://github.com/datapartnership/gaza-israel-conflict-impact-analysis"
 
-[tool.codespell]
-skip = './.git,docs/_build,docs/references.bib,*.py,*.R,*.png,*.gz,*.whl'
-ignore-regex = '^\s*"image\/png":\s.*'
-ignore-words-list = "gost,"
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/*"]
-
-[tool.hatch.version]
-source = "vcs"
-
-[tool.ruff.lint.pydocstyle]
-convention = "numpy"
+[tool.setuptools.dynamic]
+version = { attr = "gaza_israel_conflict_analysis.__version__" }

@@ -17,6 +17,9 @@ parts:
         sections:
           - file: notebooks/nighttime-lights/nighttime-lights.ipynb
           - file: notebooks/nighttime-lights/nighttime-lights-in-jordan.ipynb
+      - file: notebooks/mobility/README
+        sections:
+          - file: notebooks/mobility/mapbox.ipynb
       - file: notebooks/solar-panel-segmentation/README
         sections:
           - file: notebooks/solar-panel-segmentation/panel-detection-gaza.ipynb
