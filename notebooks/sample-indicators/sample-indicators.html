@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Visualizing Damage Buildings and Infrastructure in Gaza</title>
+    <title>Combining insights from multiple data sources for Gaza</title>
   
   
   
@@ -67,14 +67,10 @@
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/damage-assessment/damage-assessment';</script>
-    <link rel="canonical" href="https://worldbank.github.io/https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/notebooks/damage-assessment/damage-assessment.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/sample-indicators/sample-indicators';</script>
+    <link rel="canonical" href="https://worldbank.github.io/https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/notebooks/sample-indicators/sample-indicators.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Damage Assessment until February 2, 2024" href="../../reports/20240202/README.html" />
-    <link rel="prev" title="Damage to Buildings and Infrastructure" href="README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
     <meta name="docbuild:last-update" content="Mar 21, 2024"/>
@@ -137,6 +133,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -188,9 +186,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../docs/data.html">Datasets and Data Products Summary</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Data Products</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="README.html">Damage to Buildings and Infrastructure</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Visualizing Damage Buildings and Infrastructure in Gaza</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../damage-assessment/README.html">Damage to Buildings and Infrastructure</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../damage-assessment/damage-assessment.html">Visualizing Damage Buildings and Infrastructure in Gaza</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../reports/20240202/README.html">Damage Assessment until February 2, 2024</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../reports/20240317/README.html">Damage Assessment until March 17, 2024</a></li>
 </ul>
@@ -288,7 +286,7 @@
       
       
       
-      <li><a href="https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/edit/main/notebooks/damage-assessment/damage-assessment.ipynb" target="_blank"
+      <li><a href="https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/edit/main/notebooks/sample-indicators/sample-indicators.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -305,7 +303,7 @@
       
       
       
-      <li><a href="https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/issues/new?title=Issue%20on%20page%20%2Fnotebooks/damage-assessment/damage-assessment.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/datapartnership/gaza-israel-conflict-impact-analysis/issues/new?title=Issue%20on%20page%20%2Fnotebooks/sample-indicators/sample-indicators.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -335,7 +333,7 @@
       
       
       
-      <li><a href="../../_sources/notebooks/damage-assessment/damage-assessment.ipynb" target="_blank"
+      <li><a href="../../_sources/notebooks/sample-indicators/sample-indicators.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -345,7 +343,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -417,7 +415,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Visualizing Damage Buildings and Infrastructure in Gaza</h1>
+    <h1>Combining insights from multiple data sources for Gaza</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -431,24 +429,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="visualizing-damage-buildings-and-infrastructure-in-gaza">
-<h1>Visualizing Damage Buildings and Infrastructure in Gaza<a class="headerlink" href="#visualizing-damage-buildings-and-infrastructure-in-gaza" title="Permalink to this heading">#</a></h1>
-<p>This notebook provides a visual analysis of Synthetic Aperture Radar (SAR) data to assess and visualize potential damage in the Gaza Strip. SAR data, known for its ability to capture ground features and changes regardless of weather conditions or time of day, can be instrumental in identifying changes in infrastructure or land features following conflict or disasters.</p>
-<p>You can now interact with this map by selecting/deselecting different damage layers to visualize where buildings are most impacted in the Gaza Strip. Upon visual inspection, you can see:</p>
-<ol class="arabic simple">
-<li><p><strong>Damage:</strong> You can select and deselect the layers to see damages to roads, buildings and points of interest. The damage value ranges from <span class="math notranslate nohighlight">\([0,1]\)</span>, with <span class="math notranslate nohighlight">\(1\)</span> indicating higher level of damage.</p></li>
-<li><p><strong>Conflict:</strong> You can select this layer to view areas with reported events and fatalities.</p></li>
-</ol>
-<iframe width="100%" height="500px" src="https://studio.foursquare.com/public/26ba3dfb-0770-4cc6-b6fa-2ee2878580fc/embed" frameborder="0" allowfullscreen></iframe><figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../../_images/logo.png"><img alt="../../_images/logo.png" src="../../_images/logo.png" style="height: 0px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Damage assessment in the Gaza Strip utilizing SAR imagery to evaluate the extent of destruction The damage map above is based on preliminary estimates and have not been verified through field survey or satellite imagery. It does not reflect the final estimations by the World Bank. Country borders or names do not necessarily reflect the World Bank Group’s official position. This map is for illustrative purposes and does not imply the expression of any opinion on the part of the World Bank, concerning the legal status of any country or territory or concerning the delimitation of frontiers or boundaries.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The results shown in this analysis only reflect the damages until <strong>March 17, 2024</strong>. As the team completes further analysis, the notebook will be updated.</p>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="combining-insights-from-multiple-data-sources-for-gaza">
+<h1>Combining insights from multiple data sources for Gaza<a class="headerlink" href="#combining-insights-from-multiple-data-sources-for-gaza" title="Permalink to this heading">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
@@ -464,7 +446,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./notebooks/damage-assessment"
+            path: "./notebooks/sample-indicators"
         },
         predefinedOutput: true
     }
@@ -481,24 +463,6 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="README.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Damage to Buildings and Infrastructure</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="../../reports/20240202/README.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Damage Assessment until February 2, 2024</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
