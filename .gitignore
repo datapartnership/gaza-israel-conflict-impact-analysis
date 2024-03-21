@@ -91,3 +91,5 @@ _build/
 # Project-specific
 .env
 data/
+
+docs/images
