@@ -1,5 +1,5 @@
 from bokeh.plotting import figure, ColumnDataSource
-from bokeh.models import Legend, Span, Label
+from bokeh.models import Legend
 from bokeh.layouts import column
 from bokeh.core.validation import silence
 from bokeh.core.validation.warnings import EMPTY_LAYOUT
@@ -7,7 +7,6 @@ from bokeh.core.validation.warnings import EMPTY_LAYOUT
 
 # Use the silence function to ignore the EMPTY_LAYOUT warning
 silence(EMPTY_LAYOUT, True)
-
 
 
 def get_line_chart(
@@ -27,23 +26,24 @@ def get_line_chart(
 
     # Loop through each unique category and plot a bar
     for id, unique_category in enumerate(df[category].unique()):
-    # Filter the DataFrame for each category
+        # Filter the DataFrame for each category
         category_df = df[df[category] == unique_category].copy()
         category_df.sort_values(
-            by="agg_day_period", inplace=True)  # Ensure the DataFrame is sorted by date
+            by="agg_day_period", inplace=True
+        )  # Ensure the DataFrame is sorted by date
         category_source = ColumnDataSource(category_df)
 
-    # Plot the bars
+        # Plot the bars
         p2.line(
             x="agg_day_period",
             y=measure,
             width=1.5,
             source=category_source,
             color=color_palette[id],
-            legend_label = unique_category
+            legend_label=unique_category,
         )
 
-    # Configure legend
+        # Configure legend
         p2.legend.click_policy = "hide"
         p2.legend.location = "top_right"
 
