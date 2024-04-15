@@ -204,10 +204,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../mobility/mapbox.html">Activity Trends in Gaza</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../solar-panel-segmentation/README.html">Detection of Solar Panels</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../solar-panel-segmentation/panel-detection-gaza.html">Run a system through the Panel-Segmentation detection pipeline</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../solar-panel-detection/solar-panel-detection.html">Solar Panel Detection in Gaza</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample Indicators</span></p>
 <ul class="nav bd-sidenav">
@@ -471,10 +468,10 @@ document.write(`
 <h3>1. Image similarity computation<a class="headerlink" href="#image-similarity-computation" title="Permalink to this heading">#</a></h3>
 <p>This similarity measurement, namely interferometric coherence ranging from <span class="math notranslate nohighlight">\([0,1]\)</span>, provides values of high similarity (usually higher than <span class="math notranslate nohighlight">\(0.6\)</span>) over structures on that had not suffered almost any variation, as for example buildings or man-made structures, while exhibits lower values (usually lower than <span class="math notranslate nohighlight">\(0.4\)</span>) over forest and agricultural areas (especially on large time separation between the acquisition time of the satellite data) over water (usually lower than <span class="math notranslate nohighlight">\(0.3\)</span>) bodies already between consecutive acquisitions.</p>
 <p>We have employed all the Copernicus <a class="reference external" href="https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1/overview">Sentinel-1</a> data acquired over the Gaza strip, which consists in 3 satellite orbits, namely ascending orbit 87 and 160 and descending orbit 94, and we computed all the similarity maps with respect to the first image available for each of the orbits acquired in September 2022 to have time series measurements that will allow us to use a statistical approach to determine changes using anomaly detection method. Each orbit has 12 days repeat pass, so new updated products can be added regularly every 12 days.</p>
-<figure class="align-default" id="id6">
+<figure class="align-default" id="id8">
 <img alt="../../_images/damage-assessment-calendar.png" src="../../_images/damage-assessment-calendar.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Calendar with Copernicus Sentinel-1 acquisition dates after the war started on past 7th October 2023 until 9th January 2023.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Calendar with Copernicus Sentinel-1 acquisition dates after the war started on past 7th October 2023 until 9th January 2023.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -482,10 +479,10 @@ document.write(`
 <h3>2. Change detection based on time series statistics<a class="headerlink" href="#change-detection-based-on-time-series-statistics" title="Permalink to this heading">#</a></h3>
 <p>For the time series change detection, we have computed all the data pre-war September 2022 until end September 2023 to compute the statistics in non-war situation, and to use those statistics to classify the newer data acquired during the war period October 2023 until the present time with pixels for which had been detected a change (potentially attributable to war damage) using anomaly detection method with different thresholds (i.e. 3 sigma rule and 2.5 sigma rule).</p>
 <p>The 3-sigma rule is more conservative and provides more conservative results with false alarms regarding the change detections. 3-sigma rule considers as anomaly values that are lower than the average minus 3 times their standard deviation which it means that are lower than the 99.6% of the value’s normal distribution (measured in non-war conditions) or are included in the 0.15% of possible values, and hence, detected as anomalous. Similarly happens for the 2.5 sigma rule, which pixels are considered as anomaly the ones being the 0.65%. This 2.5 sigma rule may increase some more false alarms, while the 3 sigma rule is considered more conservative anomaly detection rule. See example of this empirical rule below.</p>
-<figure class="align-default" id="id7">
+<figure class="align-default" id="id9">
 <a class="reference internal image-reference" href="../../_images/damage-assessment-empirical-rule.jpg"><img alt="../../_images/damage-assessment-empirical-rule.jpg" src="../../_images/damage-assessment-empirical-rule.jpg" style="width: 300.0px; height: 276.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Illustration of the empirical rule</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Illustration of the empirical rule</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
