@@ -67,6 +67,15 @@ For the final assessment of infrastructural damage, in roads, points of interest
 
   - Using Microsoft footprint layer, they are overlaid with the change map and computed which is the percentage (in $[0,1]$ range) of their area which are likely damaged, but they do not come with landuse information.
 
+## Results
+
+You can now interact with this map by selecting/deselecting different damage layers to visualize where buildings are most impacted in the Gaza Strip. Upon visual inspection, you can see:
+
+1. **Damage:** You can select and deselect the layers to see damages to roads, buildings and points of interest. The damage value ranges from $[0,1]$, with $1$ indicating higher level of damage.
+2. **Conflict:** You can select this layer to view areas with reported events and fatalities.
+
+<iframe width="100%" height="500px" src="https://studio.foursquare.com/public/26ba3dfb-0770-4cc6-b6fa-2ee2878580fc/embed" frameborder="0" allowfullscreen></iframe>
+
 ## Limitations
 
 ```{important}
