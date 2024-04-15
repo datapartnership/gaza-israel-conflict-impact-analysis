@@ -20,9 +20,7 @@ parts:
       - file: notebooks/mobility/README
         sections:
           - file: notebooks/mobility/mapbox.ipynb
-      - file: notebooks/solar-panel-segmentation/README
-        sections:
-          - file: notebooks/solar-panel-segmentation/panel-detection-gaza.ipynb
+      - file: notebooks/solar-panel-detection/solar-panel-detection.ipynb
   - caption: Sample Indicators
     chapters:
       - file: reports/sample-indicators/housing-and-community.ipynb

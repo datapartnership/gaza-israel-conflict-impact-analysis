@@ -48,7 +48,7 @@ docs = [
 [tool.codespell]
 skip = 'docs/_build,docs/references.bib,*.png,*.gz,*.whl'
 ignore-regex = '^\s*"image\/png":\s.*'
-ignore-words-list = "gost,"
+ignore-words-list = "gost,manuel,"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/gaza_israel_conflict_impact_analysis"]
