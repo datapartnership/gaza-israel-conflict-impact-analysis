@@ -67,6 +67,10 @@ For the final assessment of infrastructural damage, in roads, points of interest
 
   - Using Microsoft footprint layer, they are overlaid with the change map and computed which is the percentage (in $[0,1]$ range) of their area which are likely damaged, but they do not come with landuse information.
 
+## Results
+
+
+
 ## Limitations
 
 ```{important}
