@@ -23,8 +23,8 @@ parts:
       - file: notebooks/solar-panel-detection/solar-panel-detection.ipynb
   - caption: Sample Indicators
     chapters:
-      - file: reports/sample-indicators/housing-and-community.ipynb
-      - file: reports/sample-indicators/industry-and-commerce.ipynb
+      - file: notebooks/sample-indicators/housing-and-community.ipynb
+      - file: notebooks/sample-indicators/industry-and-commerce.ipynb
   - caption: Acknowledgements
     chapters:
       - file: docs/team
