@@ -8,9 +8,7 @@ description = "A Python package to support the Gaza Israel Conflict Impact Analy
 readme = { file = "README.md", content-type = "text/markdown" }
 license = { file = "LICENSE" }
 keywords = [
-	"gaza",
-	"reproducible research",
-	"world bank",
+	"Impacts of the Conflict in the Middle East on the Palestinian Economy",
 ]
 authors = [
 	{ name = "World Bank Data Lab", email = "datalab@worldbank.org" },
@@ -32,7 +30,14 @@ classifiers = [
 dynamic = ["version"]
 
 requires-python = ">=3.10"
-dependencies = ["pandas>=2"]
+dependencies = [
+	"blackmarblepy>=2024.08.1", 
+	"bokeh>=3,<4",
+	"colorcet",  
+	"folium",    
+	"geopandas",    
+	"pandas>=2",
+]
 [project.optional-dependencies]
 notebook = ["notebook>=6.5.2"]
 docs = [
@@ -50,8 +55,10 @@ skip = 'docs/_build,docs/references.bib,*.png,*.gz,*.whl'
 ignore-regex = '^\s*"image\/png":\s.*'
 ignore-words-list = "gost,manuel,"
 
-[tool.hatch.build.targets.wheel]
-packages = ["src/gaza_israel_conflict_impact_analysis"]
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/**/*"
+]
 
 [tool.hatch.version]
 source = "vcs"

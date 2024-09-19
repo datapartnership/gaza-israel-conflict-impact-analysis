@@ -3,7 +3,6 @@
 [![DOI](https://zenodo.org/badge/707308540.svg)](https://zenodo.org/doi/10.5281/zenodo.10684882)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/datapartnership/gaza-israel-conflict-impact-analysis/main.svg)](https://results.pre-commit.ci/latest/github/datapartnership/gaza-israel-conflict-impact-analysis/main)
 
-
 > Using Alternative Data to Understand Economic Impacts of the Gaza-Israel 2023 Conflict
 
 The Gaza-Israel 2023 Conflict has had profound economic implications that extend beyond conventional measures. This project aims to explore alternative data sources, such as synthetic-aperture radar and nighttime lights, to better comprehend the multifaceted economic impacts on the Gaza Strip. Leveraging alternative data sources can provide a more nuanced understanding of the economic landscape during and after such events, when traditional economic indicators may not fully capture the complex dynamics and localized effects of conflicts.
@@ -13,6 +12,8 @@ The following reports featured insights from our project's data and analyses.
 - [World Bank Support for Emergency Relief to Gaza](https://www.worldbank.org/en/news/press-release/2023/12/12/world-bank-support-for-emergency-relief-to-gaza)
 
 - [Impacts of the Conflict in the Middle East on the Palestinian Economy - December 2023 Update](https://documents1.worldbank.org/curated/en/099721412142313834/pdf/IDU043992ccb0c283048bd0941e073dbfc46633b.pdf)
+
+- [Impacts of the Conflict in the Middle East on the Palestinian Economy - March 2024 Update](https://thedocs.worldbank.org/en/doc/ce9fed0d3bb295f0363d690224d1cd39-0280012024/original/Palestinian-Econ-Upd-May2024-FINAL-ENGLISH-Only.pdf?_gl=1*v8jenz*_gcl_au*MTgyMDk4MDQ1Ny4xNzI0MTYwODM5)
 
 ## Contributing
 
