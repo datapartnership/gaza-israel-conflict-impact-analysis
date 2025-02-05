@@ -21,6 +21,9 @@ parts:
         sections:
           - file: notebooks/mobility/mapbox.ipynb
       - file: notebooks/solar-panel-detection/solar-panel-detection.ipynb
+      - file: notebooks/air-pollution/README
+        sections:
+          - file: notebooks/air-pollution/air_pollution_westbank.ipynb
   - caption: Sample Indicators
     chapters:
       - file: notebooks/sample-indicators/housing-and-community.ipynb
