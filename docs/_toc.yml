@@ -20,6 +20,7 @@ parts:
       - file: notebooks/mobility/README
         sections:
           - file: notebooks/mobility/mapbox.ipynb
+          - file: notebooks/mobility/mapbox-wb.ipynb
       - file: notebooks/solar-panel-detection/solar-panel-detection.ipynb
       - file: notebooks/air-pollution/README
         sections:
