@@ -15,6 +15,7 @@ def get_line_chart(
     subtitle=None,
     measure="measure",
     category="category",
+    date_col = None
 ):
     # Initialize the figure
     p2 = figure(x_axis_type="datetime", width=750, height=400, toolbar_location="above")
@@ -34,7 +35,7 @@ def get_line_chart(
 
         # Plot the bars
         p2.line(
-            x="agg_day_period",
+            x=date_col,
             y=measure,
             width=1.5,
             source=category_source,
