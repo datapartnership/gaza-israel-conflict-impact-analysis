@@ -2,16 +2,16 @@
 
 Air Pollution is typically measured by calculating the density of different pollutants in the atmosphere. Some of the commonly measured pollutants are NO2, O3 and particulate matter. Studies found NO2 levels as a useful proxy for economic activity (Deb, et.al., 2020). One of the reasons is because it is measured during the day when businesses are open and people are at work. It also stays close to the source of emissions —such as engines, vehicles or chimneys — and has a short atmospheric life (Ezran, et.al., 2023). Yailymova et.al., 2023 also posited that air quality and, in particular, levels of fine particulate matter (e.g., PM2.5 and PM 10 ) over cities can be a proxy for assessment of economic activity and density of city populations. NO2 along with other NOx reacts with other chemicals in the air to form both particulate matter and ozone. A 2020 study of cities in Sub-Saharan Africa finds that NO2 provides a useful, albeit “noisy”, real-time proxy measure of how COVID-19 has affected [economic activity](https://blogs.worldbank.org/developmenttalk/what-nitrogen-dioxide-emissions-tell-us-about-fragile-recovery-south-asia).
 
-In this analysis, we observe the trends in monthly NO2 levels for West Bank from 2019 to 2024. The methodology to link economic activity to NO2 is still ongoing. This analysis is one step of it. 
+In this analysis, we observe the trends in monthly NO2 levels for West Bank from 2019 to 2024. The methodology to link economic activity to NO2 is still ongoing. This analysis is one step of it.
 
 ## Common sources of NO2
 
-- One of the chemical processes that generates NO2 is burning of fossil fuels (coal, gas and oil). Gives cars use this process, road traffic is the principal outdoor source of nitrogen dioxide (Jarvis et. al., 2010). 
+- One of the chemical processes that generates NO2 is burning of fossil fuels (coal, gas and oil). Gives cars use this process, road traffic is the principal outdoor source of nitrogen dioxide (Jarvis et. al., 2010).
 - Diesel powered non-road equipment
 - Industrial processes such as oil and gas production
 - Coal fired power plants
 - While the principal emissions of an aircraft are CO2 and H2O, other major emissions include nitric oxide and nitrogen dioxide (Miake-Lye & Hauglustaine, 2022).
-- Any construction activity involving diesel fuel non-road mobile machinery will result in NOx emissions. 
+- Any construction activity involving diesel fuel non-road mobile machinery will result in NOx emissions.
 
 
 ## Data Description

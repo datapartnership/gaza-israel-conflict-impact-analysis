@@ -15,7 +15,7 @@ def get_line_chart(
     subtitle=None,
     measure="measure",
     category="category",
-    date_col = None
+    date_col=None,
 ):
     # Initialize the figure
     p2 = figure(x_axis_type="datetime", width=750, height=400, toolbar_location="above")
